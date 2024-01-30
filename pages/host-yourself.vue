@@ -40,7 +40,7 @@ useHead({
       <div class="col-6 col-lg-3 icon-box pb-50">
         <i class="fa-regular fa-face-laugh-beam evaty-text-gradient"></i>
         <h3>Einfache Handhabung</h3>
-        <p>Das erstellen und bearbeiten deines Events wird kinderleich</p>
+        <p>Das erstellen und bearbeiten deines Events wird kinderleicht</p>
       </div>
       <div class="col-6 col-lg-3 icon-box pb-50">
         <i class="fa-regular fa-star-shooting evaty-text-gradient"></i>
@@ -50,13 +50,13 @@ useHead({
       <div class="col-6 col-lg-3 icon-box pb-50">
         <i class="fa-regular fa-ticket evaty-text-gradient"></i>
         <h3>Verkaufe Tickets</h3>
-        <p>Verlinke deine Ticket seite und leite Traffic direkt zu deinen Tickets.</p>
+        <p>Verlinke deine Ticket-Seite und leite Traffic direkt zu deinen Tickets.</p>
       </div>
       <div class="col-6 col-lg-3 icon-box pb-50">
         <i class="fa-regular fa-users evaty-text-gradient"></i>
         <h3>Kundenbindung</h3>
         <p>
-          Nutzer können dein Profil abbonieren und bekommen benachrichtigungen über alle
+          Nutzer können dein Profil abonnieren und bekommen benachrichtigungen über alle
           neuigkeiten.
         </p>
       </div>
@@ -68,7 +68,7 @@ useHead({
       <div class="col-6 col-lg-3 icon-box pb-50">
         <i class="fa-regular fa-seedling evaty-text-gradient"></i>
         <h3>Regelmäßige Updates</h3>
-        <p>Wir arbeiten ständing an unserer Seite und wollen dir alles beiten was du brauchst.</p>
+        <p>Wir arbeiten ständing an unserer Seite und wollen dir alles bieten was du brauchst.</p>
       </div>
     </div>
   </section>

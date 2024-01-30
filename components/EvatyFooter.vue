@@ -18,7 +18,7 @@ export default defineComponent({
                         <span class="footer-link-head">Nützliches</span>
                         <span class="footer-link"><a href="https://evaty-app.statuspage.io"
                                                      target="_blank">Status</a></span>
-                        <span class="footer-link"><a href="https://hosts.evaty.net/login" rel="nofollow">Veranstalter login</a></span>
+                        <span class="footer-link"><a href="https://hosts.evaty.net/login" rel="nofollow">Veranstalter-Login</a></span>
                         <span class="footer-link"><router-link to="/support">Support Center</router-link></span>
                     </div>
                     <div class="footer-link-list-item">
