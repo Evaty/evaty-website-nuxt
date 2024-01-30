@@ -207,9 +207,13 @@
       </div>
     </section>
   </div>
-  <div v-else class="loading">
-    <i class="fa-regular fa-spinner-third fa-spin"></i>
-    Loading
+  <div v-else class="loading d-flex gap-4" style="font-size: 32px">
+    <div>
+      <i class="fa-regular fa-spinner-third fa-spin"></i>
+    </div>
+    <div class="fw-bold">
+      Loading
+    </div>
   </div>
 </template>
 

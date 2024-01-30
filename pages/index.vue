@@ -15,7 +15,7 @@
             </h1>
             <evaty-form-group name="Suche" class="pt-30 pb-20">
               <template #label>Suchen</template>
-              <input type="text" name="search" id="search-field" required />
+              <input type="text" name="search" id="search-field" required/>
             </evaty-form-group>
             <evaty-button type="primary" block> Suchen</evaty-button>
             <div class="d-flex justify-content-center pt-10">
@@ -36,10 +36,19 @@
     </div>
   </section>
 
-  <div class="container">
-    <!--    TODO Add event stream-->
-    <h1 class="evaty-color-text-danger-500">TODO: Add event stream</h1>
-  </div>
+  <section id="next-year" class="container pb-150">
+    <div class="row pb-20">
+      <div class="col-12">
+        <h2>🎉 Festival Season 2024</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <evaty-event-stream
+            path="v1/list/a7cee3a4-168b-41da-9cb8-8091066a3772/events/"/>
+      </div>
+    </div>
+  </section>
 
 
   <section class="container pb-150">
@@ -73,7 +82,7 @@
 
   <!--  TODO responsive-->
   <h1 class="evaty-color-text-danger-500">TODO: Make responsive</h1>
-  <EvatyTeaserDownload />
+  <EvatyTeaserDownload/>
 
   <section id="category" class="mb-150 container">
     <div class="row pb-20">
@@ -120,7 +129,7 @@
   </section>
 </template>
 <script setup lang="ts">
-import { EvatyButton, EvatyFormGroup, EvatyImageCard, EvatyTownCard } from 'evaty-component-lib'
+import {EvatyButton, EvatyFormGroup, EvatyImageCard, EvatyTownCard} from 'evaty-component-lib'
 
 // import 'swiper/css'
 // import 'swiper/css/navigation'
@@ -134,10 +143,7 @@ import catFitness from '@/assets/images/categorys/fitness.png'
 import catClub from '@/assets/images/categorys/club.png'
 import catFleamarket from '@/assets/images/categorys/fleamarket.png'
 
-// import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Navigation } from 'swiper/modules'
-// import EvatyTeaserDownload from '@/components/EvatyTeaserDownload.vue'
-// import { useHead } from '@unhead/vue'
+import {Navigation} from 'swiper/modules'
 
 const modules = [Navigation]
 const citys = [
