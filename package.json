@@ -10,11 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/i18n": "^8.0.0",
+    "dayjs-nuxt": "^2.1.9",
+    "mapbox-gl": "^3.1.2",
     "nuxt": "^3.9.3",
+    "nuxt-mapbox": "^1.5.7",
+    "sass": "^1.70.0",
     "vue": "^3.4.14",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "evaty-component-lib": "^0.2.12"
+    "evaty-component-lib": "^0.2.21",
+    "nuxt-swiper": "^1.2.2"
   }
 }

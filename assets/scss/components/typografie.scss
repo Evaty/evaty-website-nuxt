@@ -1,0 +1,36 @@
+body, html {
+    font-size: 16px;
+    color: var(--ev-color-text, #000000);
+    font-weight: 500;
+    font-family: var(--ev-font-family);
+}
+
+a, .link {
+    color: var(--ev-color-primary-500);
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: var(--ev-color-text);
+    font-family: var(--ev-font-family);
+    font-weight: 700;
+}
+
+h1, .h1, h2, .h2 {
+    font-weight: 800;
+}
+
+h1, .h1 {
+    font-size: 40px;
+    @include media-breakpoint-up(md) {
+        font-size: 48px;
+    }
+}
+
+.h2, h2 {
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+}
+
+.evaty-text-primary {
+    color: var(--ev-color-primary-500);
+}

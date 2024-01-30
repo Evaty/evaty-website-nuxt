@@ -1,0 +1,98 @@
+.header-image {
+    > img {
+        width: 100vw;
+        height: 43vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        content: "";
+
+        object-fit: cover;
+    }
+
+    .row {
+        position: relative;
+        z-index: 1;
+    }
+
+    .header-image-inner-card {
+        background: white;
+        border-radius: 20px;
+        &.transparent {
+            background-color: transparent;
+        }
+    }
+}
+
+.icon-box {
+    //d-flex justify-content-center flex-column text-center
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .fa-regular {
+        font-size: 85px;
+        color: var(--evaty-color-primary-500);
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-weight: 500;
+        opacity: .7;
+    }
+}
+
+.testemonial {
+    background: white;
+    border-radius: 20px;
+    padding: 80px 110px;
+
+    .testemonial-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .upper {
+            opacity: .7;
+            font-weight: 400;
+            padding-bottom: 15px;
+        }
+
+        .down {
+            display: flex;
+            gap: 30px;
+            opacity: .7;
+
+            .name {
+                font-weight: 600;
+            }
+
+            .title {
+                font-style: italic;
+            }
+        }
+    }
+
+    img {
+        max-height: 160px;
+        max-width: 160px;
+        border-radius: 10px;
+    }
+}
+
+.support-card {
+    background: white;
+    border-radius: 20px;
+    padding: 80px 110px;
+}
+
+.pricing {
+    .title {
+
+    }
+}

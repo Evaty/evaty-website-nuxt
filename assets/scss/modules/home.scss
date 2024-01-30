@@ -1,0 +1,104 @@
+#hero-search {
+    height: calc(100vh - 77.5px);
+    background-size: cover;
+
+    .hero-inner {
+        height: 100%;
+        width: 100%;
+
+        .hero-search-container {
+            background-color: var(--evaty-color-background);
+            border-radius: 15px;
+            padding: 20px;
+            z-index: 1;
+
+            h1 {
+                //color: white;
+                font-size: 48px;
+                color: var(--evaty-color-text);
+            }
+
+            label {
+                color: white;
+            }
+
+            svg {
+                fill: rgb(33, 37, 41);
+                cursor: pointer;
+            }
+
+            @include media-breakpoint-up(md) {
+                padding: 45px;
+            }
+            @include media-breakpoint-up(lg) {
+                padding: 100px;
+                h1 {
+                    font-size: 48px;
+                }
+            }
+
+            .primary {
+                color: var(--evaty-color-primary-500);
+            }
+        }
+    }
+
+    .header-bg-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        z-index: 0;
+    }
+
+    #down-click {
+        left: 50%;
+        bottom: 10px;
+        position: absolute;
+        fill: white;
+        cursor: pointer;
+    }
+}
+
+#teaser-download {
+    .container {
+        position: relative;
+        z-index: 10;
+
+        > img {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            max-width: 100%;
+            border-radius: 7px;
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        .action {
+            gap: 20px;
+
+            img {
+                max-height: 50px;
+                height: 50px;
+            }
+        }
+
+        .headline {
+            h2 {
+                font-size: 48px;
+                font-weight: 800;
+                color: black;
+
+                .primary {
+                    color: var(--evaty-color-primary-500);
+                }
+            }
+        }
+    }
+}

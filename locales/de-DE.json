@@ -1,0 +1,231 @@
+{
+    "currentLang": "Deutsch (DE)",
+    "moment-locale": "de",
+    "tabs": {
+        "home": {
+            "section-citys": "Überall in Deutschland",
+            "section-sep-22": "Hast du schon ein Kostüm für die Party?"
+        }
+    },
+    "home": {
+        "title": "Hey {name} 👋",
+        "recommended-categorys": "Stöbere in unseren Kategorien.",
+        "recommended-lists": "Empfohlende Listen",
+        "recommended-events": "Empfohlende Events",
+        "teaser-summer-22": "Genieße den Sommer, und lade andere dazu ein!",
+        "teaser-club-jan-23": "Auch im Winter muss man nicht mit dem Feiern aufhören.",
+        "teaser-fitness-jan-23": "Für deine Neujahrs Vorsätze. Finde Fitness Angebote."
+    },
+    "explore": {
+        "title": "Entdecken"
+    },
+    "bookmarks": {
+        "title": "Gespeichert",
+        "no-saves": "Du hast noch keine Events gespeichert."
+    },
+    "account": {
+        "title": "Dein Konto",
+        "created-events": "Erstellte Events",
+        "created-lists": "Erstellte Listen"
+    },
+    "on-boarding": {
+        "welcome": {
+            "title": "Willkommen",
+            "sub-title": "Hi, schön das du hergefunden hast",
+            "choose-lang": "Sprache wählen",
+            "next-no-account": "ohne konto Weiter"
+        },
+        "setup": {
+            "title": "Kontoeinrichtung",
+            "message": "Um fortzufahren, erstelle dir bitte ein Konto oder melde dich an."
+        },
+        "step-one": {
+            "hero-upper": "Willkommen! \uD83D\uDC4B",
+            "hero": "Lass uns dein Profil erstellen!"
+        },
+        "step-two": {
+            "display-name": "Anzeigename...",
+            "bio": "Bio..."
+        },
+        "step-three": {
+            "hero": "Welche Sprache sprichst du?"
+        },
+        "step-fourth": {
+            "hero-upper": "Fertig",
+            "hero": "Jetzt geht endlich los!"
+        },
+        "login": {
+            "title": "Anmeldung",
+            "hero-upper": "Willkommen zurück",
+            "hero": "Wir sind gleich soweit"
+        },
+        "register": {
+            "title": "Registrierung",
+            "hero-upper": "Hey, willkommen",
+            "hero": "Gleich geht’s los",
+            "success": "Du kannst dich jetzt in deinen Account anmelden."
+        },
+        "auth": {
+            "username": "Nutzername",
+            "password": "Passwort",
+            "email": "Email Adresse",
+            "sign-in": "Anmelden",
+            "sign-up": "Konto erstellen",
+            "sheet-title": "Was möchtest du tun?"
+        }
+    },
+    "event-detail": {
+        "title": "Event",
+        "place": "Wo findet es statt?",
+        "times": "Wann geht's los?",
+        "who": "Wer veranstaltet?",
+        "next-appointment": "Nächster Termin:",
+        "entry": "Anmelden",
+        "description": "Beschreibung",
+        "lineup": "Lineup"
+    },
+    "list-detail": {
+        "title": "Liste"
+    },
+    "creator": {
+        "lists": {
+            "title": "Liste erstellen",
+            "list-name": "Listen Name",
+            "from": "von",
+            "icon": "Icon*"
+        }
+    },
+    "updated": {
+        "title": "Willkommen zurück",
+        "hero-small": "Es gibt Neuigkeiten,",
+        "hero": "hier sind ein paar davon.",
+        "first": "Ein paar Design änderungen",
+        "second": "Fehlerbehebungen",
+        "third": "Erneuter Account reset :(",
+        "fourth": "Personalisiere dein Profil",
+        "fifth": "Überarbeitetes Design"
+    },
+    "event-modal": {
+        "add-to-list": "Zu Liste hinzufügen",
+        "add": "Hinzufügen"
+    },
+    "settings": {
+        "title": "Einstellungen",
+        "account-item": "Konto",
+        "logout": "Abmelden",
+        "version": "Version",
+        "account": {
+            "title": "Konto einstellungen",
+            "display-name": "Anzeigename",
+            "display-name-title": "Anzeigename ändern",
+            "bio": "Bio",
+            "bio-title": "Bio ändern",
+            "profile-picture": "Profilbild",
+            "profile-picture-title": "Profilbild ändern",
+            "profile-picture-tap": "Tippen um Profilbild zu ändern",
+            "language": "Sprache",
+            "language-title": "Sprache ändern",
+            "delete": "Konto löschen",
+            "delete-confirm": "Willst du deinen Account wirklich löschen?",
+            "delete-header": "Dein Account wird in 30 Tagen gelöscht.",
+            "delete-subheader": "Wenn du dich umentscheidest kannst du uns währendwessen jederzeit schreiben.",
+            "support": "Hilfe"
+        }
+    },
+    "categorys": {
+        "filter": "Filter",
+        "festival": {
+            "label": "Festivals",
+            "music-festival": "Musik Festivals",
+            "music-edm": "Elektro Festivals",
+            "music-metal": "Metal Festivals",
+            "music-rock": "Rock Festivals",
+            "music-hiphop": "HipHop Festivals"
+        },
+        "concert": {
+            "label": "Konzerte",
+            "concerts": "Neuste",
+            "edm": "EDM Konzerte",
+            "rock": "Rock Konzerte",
+            "pop": "Pop Konzerte",
+            "indie": "Indie Konzerte",
+            "metal": "Metal Konzerte"
+        },
+        "adventure": {
+            "label": "Erlebnisse",
+            "fun": "Spaßige Erlebnisse",
+            "workshops": "Workshops",
+            "course": "Kurse",
+            "tour": "Touren"
+        },
+        "fitness": {
+            "label": "Fintess"
+        },
+        "club": {
+            "label": "Club Shows"
+        },
+        "market": {
+            "name": "Märkte",
+            "fleamarket": "Flohmarkt"
+        }
+    },
+    "category": {
+        "adventure": {
+            "fun": "Spaßiges Abenteuer"
+        }
+    },
+    "general": {
+        "tbd": "Wird noch festgelegt",
+        "select-language": "Sprache wählen",
+        "cancel": "Abbrechen",
+        "next": "Weiter",
+        "searching": "Suchen",
+        "save": "Speichern",
+        "close": "Schließen",
+        "events": "Event",
+        "lists": "Listen",
+        "follow": "Folgen",
+        "unfollow": "Entfolgen",
+        "accounts": "Konten",
+        "share": "Teilen",
+        "search": "Suchen",
+        "yes": "Ja",
+        "no": "Nein",
+        "logoff": "Möchtest du dich abmelden?",
+        "done": "Fertig",
+        "create-list": "Liste erstellen",
+        "errors": {
+            "no-events": "Leider sind hier derzeit keine Events \uD83D\uDE15",
+            "unexpected-error": "Es ist ein Fehler aufgetreten, bitte überprüfe deine Eingaben.",
+            "wrong-login": "Falsches Passwort oder Nutzername.",
+            "no-lists": "Hier findest du gerade keine Listen."
+        },
+        "badges": {
+            "not-claimed": "Dieses Profil wurde noch nicht beansprucht!",
+            "moderator": "Moderator"
+        },
+        "geo": {
+            "citys": {
+                "hamburg": "Hamburg",
+                "berlin": "Berlin",
+                "koeln": "Köln",
+                "muenchen": "München",
+                "bielefeld": "Bielefeld",
+                "dortmund": "Dortmund",
+                "bremen": "Bremen",
+                "duesseldorf": "Düsseldorf",
+                "frankfurt": "Frankfurt",
+                "hannover": "Hannover",
+                "kiel": "Kiel",
+                "leipzig": "Leipzig",
+                "muenster": "Münster",
+                "nuernberg": "Nürnberg",
+                "stuttgart": "Stuttgart"
+            },
+            "countrys": {
+                "germany": "Deutschland"
+            },
+            "current-location": "In deiner Gegend"
+        }
+    }
+}

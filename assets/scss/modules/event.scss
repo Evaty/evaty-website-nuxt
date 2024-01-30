@@ -1,0 +1,120 @@
+.act-event {
+  .event-information {
+    h1 {
+      font: normal normal 800 48px/61px var(--evaty-font-family);
+      color: var(--evaty-color-text);
+    }
+
+    .category-label p {
+      font: normal normal 800 20px/25px var(--evaty-font-family);
+      color: var(--evaty-color-primary-500);
+    }
+
+    .event-description {
+      color: var(--evaty-color-text);
+    }
+
+    .information-lists {
+      .list-headline {
+        margin-top: 20px;
+        font: normal normal 800 42px/53px var(--evaty-font-family);
+        color: var(--evaty-color-text);
+      }
+
+      .list {
+        //display: flex;
+        //flex-flow: column;
+        //flex-wrap: wrap;
+        //gap: 10px;
+        //max-height: 120px;
+
+        .list-item {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          //gap: 17px;
+          //align-items: center;
+
+          .list-item-head {
+            display: flex;
+            gap: 17px;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--evaty-color-text);
+          }
+
+          .list-icon {
+            min-width: 27px;
+            font-size: 25px;
+            color: var(--evaty-color-text);
+          }
+        }
+      }
+    }
+  }
+
+  .mapboxgl-map {
+    border-radius: 7px;
+  }
+
+  .event-profile-picture {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+
+  .host-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .display-name {
+      font-family: var(--evaty-font-family);
+      font-size: 42px;
+      font-weight: 600;
+
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--evaty-color-text);
+
+      .user-badges {
+        font-size: 20px;
+        color: var(--evaty-color-text);
+
+        .general-badges-verified {
+          color: var(--evaty-color-primary-500);
+        }
+      }
+    }
+
+    .bio {
+      max-width: 500px;
+      color: var(--evaty-color-text);
+    }
+
+    .user-link {
+      a {
+        color: var(--evaty-color-primary-500);
+        //text-decoration: underline;
+      }
+    }
+  }
+
+  .user-badges {
+    .user-badge {
+      font-size: 16px;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      span {
+        font-weight: 600;
+        font-family: var(--evaty-font-family);
+        color: var(--evaty-color-text);
+      }
+    }
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "currentLang": "English (US)",
+  "moment-locale": "en",
+  "tabs": {
+    "home": {
+      "section-citys": "All over Germany",
+      "section-sep-22": "Hast du schon ein Kostüm für die Party?"
+    }
+  },
+  "home": {
+    "title": "Hey {name} \uD83D\uDC4B",
+    "recommended-categorys": "Suggested categories",
+    "recommended-lists": "Suggested Lists",
+    "recommended-events": "Suggested Events",
+    "teaser-summer-22": "Enjoy the summer, and invite others to do the same!",
+    "teaser-club-jan-23": "Auch im Winter muss man nicht mit dem Feiern aufhören.",
+    "teaser-fitness-jan-23": "Even in winter, you don't have to stop partying."
+  },
+  "bookmarks": {
+    "title": "Saved",
+    "no-saves": "You have not saved any events yet."
+  },
+  "account": {
+    "title": "Your account",
+    "created-events": "Created events",
+    "created-lists": "Created lists"
+  },
+  "on-boarding": {
+    "welcome": {
+      "title": "Welcome",
+      "sub-title": "Hi, nice that you have found here",
+      "choose-lang": "Select language",
+      "next-no-account": "continue without account"
+    },
+    "setup": {
+      "title": "Account setup",
+      "message": "To continue, please create an account or sign in."
+    },
+    "step-one": {
+      "hero-upper": "Welcome! \uD83D\uDC4B",
+      "hero": "Let's create your profile!"
+    },
+    "step-two": {
+      "display-name": "Display name...",
+      "bio": "Bio..."
+    },
+    "step-three": {
+      "hero": "What language do you speak?"
+    },
+    "step-fourth": {
+      "hero-upper": "You're ready",
+      "hero": "Now it's finally time to go!"
+    },
+    "login": {
+      "title": "Sign in",
+      "hero-upper": "Welcome back",
+      "hero": "We are almost ready"
+    },
+    "register": {
+      "title": "Registration",
+      "hero-upper": "Hey, welcome",
+      "hero": "Almost ready to go",
+      "success": "You can log in to your account now."
+    },
+    "auth": {
+      "username": "username",
+      "password": "Password",
+      "email": "Email Address",
+      "sign-in": "Sign in",
+      "sign-up": "Sign up",
+      "sheet-title": "What do you want to do?"
+    }
+  },
+  "event-detail": {
+    "title": "Event",
+    "place": "Where will it take place?",
+    "times": "When does it start?",
+    "who": "Who is hosting?",
+    "next-appointment": "Next date:",
+    "entry": "Register for event"
+  },
+  "list-detail": {
+    "title": "List"
+  },
+  "creator": {
+    "lists": {
+      "title": "Create list",
+      "list-name": "List Name",
+      "from": "from",
+      "icon": "Icon*"
+    }
+  },
+  "updated": {
+    "title": "Welcome back",
+    "hero-small": "There is news,",
+    "hero": "here are a some of them.",
+    "first": "A few design changes",
+    "second": "Bug fixes",
+    "third": "Another account reset :(",
+    "fourth": "Personalize your profile",
+    "fifth": "Revised design"
+  },
+  "event-modal": {
+    "add-to-list": "Add to list",
+    "add": "Add"
+  },
+  "settings": {
+    "title": "Settings",
+    "account-item": "Account",
+    "logout": "Logout",
+    "version": "Version",
+    "account": {
+      "title": "Account settings",
+      "display-name": "Display name",
+      "display-name-title": "Change display name",
+      "bio": "Bio",
+      "bio-title": "Change bio",
+      "profile-picture": "Profile picture",
+      "profile-picture-title": "Change profile picture",
+      "profile-picture-tap": "Tap to change profile picture",
+      "language": "Language",
+      "language-title": "Change language",
+      "delete": "Delete account",
+      "delete-confirm": "Do you really want to delete your account?",
+      "delete-header": "Your account will be deleted in 30 days.",
+      "delete-subheader": "If you change your mind, you can always write to us in the meantime.",
+      "support": "Support"
+    }
+  },
+  "categorys": {
+    "filter": "Filter",
+    "festival": {
+      "label": "Festivals",
+      "music-festival": "Music Festivals",
+      "music-edm": "Electro Festivals",
+      "music-metal": "Metal Festivals",
+      "music-rock": "Rock Festivals",
+      "music-hiphop": "Hiphop Festivals"
+    },
+    "concert": {
+      "label": "Concerts",
+      "concerts": "Latest",
+      "edm": "EDM concerts",
+      "rock": "Rock concerts",
+      "pop": "Pop concerts",
+      "indie": "Indie concerts",
+      "metal": "Metal concerts"
+    },
+    "adventure": {
+      "label": "Experiences",
+      "fun": "Fun Experiences",
+      "workshops": "Workshops",
+      "course": "Courses",
+      "tour": "Tours"
+    }
+  },
+  "category": {
+    "adventure": {
+      "fun": "Fun adventure"
+    }
+  },
+  "general": {
+    "tbd": "To be defined",
+    "select-language": "Choose language",
+    "cancel": "Cancel",
+    "next": "Continue",
+    "searching": "Search",
+    "save": "Save",
+    "close": "Close",
+    "events": "Events",
+    "lists": "Lists",
+    "follow": "Follow",
+    "unfollow": "Unfollow",
+    "accounts": "Accounts",
+    "share": "Share",
+    "search": "Search",
+    "done": "Done",
+    "yes": "Yes",
+    "no": "No",
+    "logoff": "You want to log off?",
+    "create-list": "Create List",
+    "errors": {
+      "no-events": "Unfortunately there are no events here at the moment \uD83D\uDE15",
+      "unexpected-error": "An error has occurred, please check your input.",
+      "wrong-login": "Incorrect password or username.",
+      "no-lists": "You won't find any lists here right now."
+    },
+    "badges": {
+      "not-claimed": "This profile has not been claimed yet!",
+      "moderator": "Moderator"
+    },
+    "geo": {
+      "citys": {
+        "hamburg": "Hamburg",
+        "berlin": "Berlin",
+        "koeln": "Cologne",
+        "muenchen": "Munich",
+        "bielefeld": "Bielefeld",
+        "dortmund": "Dortmund",
+        "bremen": "Bremen",
+        "duesseldorf": "Düsseldorf",
+        "frankfurt": "Frankfurt",
+        "hannover": "Hanover",
+        "kiel": "Kiel",
+        "leipzig": "Leipzig",
+        "muenster": "Münster",
+        "nuernberg": "Nuremberg",
+        "stuttgart": "Stuttgart"
+      },
+      "countrys": {
+        "germany": "Germany"
+      },
+      "current-location": "In your area"
+    }
+  }
+}
