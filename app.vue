@@ -12,5 +12,5 @@ useHead({
       content: "Plane Ausflüge und Veranstaltungen mit deinen Freunden auf Evaty.net. Finde tolle Angebote in deiner Nähe und entdecke die Welt."
     }
   ]
-})
+});
 </script>

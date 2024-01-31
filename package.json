@@ -20,7 +20,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "evaty-component-lib": "^0.2.21",
+    "evaty-component-lib": "^0.2.22",
     "nuxt-swiper": "^1.2.2"
   }
 }

@@ -136,14 +136,21 @@
         <div class="col-12">
           <div class="position-relative" style="width: 100%; height: 500px;">
             <mapbox-map
-                :map-id="`${id}-map`"
                 style="width: 100%; height: 500px;"
+                :map-id="`${id}-map`"
                 :options="{
                   style: 'mapbox://styles/mapbox/streets-v12', // style URL
                   center: [event.location.lng, event.location.lat], // starting position
                   zoom: 11 // starting zoom
                 }"
-            />
+            >
+              <MapboxDefaultMarker
+                  :marker-id="id"
+                  :options="{}"
+                  :lnglat="[event.location.lng, event.location.lat]"
+              >
+              </MapboxDefaultMarker>
+            </mapbox-map>
           </div>
         </div>
       </div>

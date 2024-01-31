@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   evaty-component-lib:
-    specifier: ^0.2.21
-    version: 0.2.21(@popperjs/core@2.11.8)(swiper@11.0.5)(vue@3.4.15)
+    specifier: ^0.2.22
+    version: 0.2.22(@popperjs/core@2.11.8)(swiper@11.0.5)(vue@3.4.15)
   nuxt-swiper:
     specifier: ^1.2.2
     version: 1.2.2(rollup@4.9.6)
@@ -3145,8 +3145,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /evaty-component-lib@0.2.21(@popperjs/core@2.11.8)(swiper@11.0.5)(vue@3.4.15):
-    resolution: {integrity: sha512-ByNm5IqALkxPHa5zI6NANm4FlRyW61zsPVMHYjxbTla0xUIkCVzVmhxgTQn6HDJem74PU4j49JQAxqWHdJtdgw==}
+  /evaty-component-lib@0.2.22(@popperjs/core@2.11.8)(swiper@11.0.5)(vue@3.4.15):
+    resolution: {integrity: sha512-pOfrtfDoBttYio++Z65hjOsA9kyUEVu/CC1eima2npa4Ku0Z6Cp54/nhNseEvazyg4KP4RRd45Rv1j0wDUqfSA==}
     peerDependencies:
       swiper: ^11.0.5
       vue: ^3.3.11
