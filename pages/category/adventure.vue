@@ -5,7 +5,10 @@ const {data: category} = await useFetch('https://api.evaty.net/api/v1/event/cate
 const dayjs = useDayjs();
 
 useHead({
-  title: "Finde Abenteuer"
+  title: "Abenteuer",
+  bodyAttrs: {
+    class: "act-category"
+  }
 })
 </script>
 

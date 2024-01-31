@@ -3,6 +3,13 @@ import {EvatyEventCard, EvatyEventCardAuthor} from "evaty-component-lib";
 
 const {data: category} = await useFetch('https://api.evaty.net/api/v1/event/category/FESTIVAL/?page=0')
 const dayjs = useDayjs();
+
+useHead({
+  title: "Festivals",
+  bodyAttrs: {
+    class: "act-category"
+  }
+})
 </script>
 
 <template>
