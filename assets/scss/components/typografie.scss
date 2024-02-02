@@ -27,10 +27,19 @@ h1, .h1 {
 }
 
 .h2, h2 {
+    font-size: 30px;
+    @include media-breakpoint-up(md) {
+        font-size: 32px;
+    }
     margin-top: 0.83em;
     margin-bottom: 0.83em;
 }
 
 .evaty-text-primary {
     color: var(--ev-color-primary-500);
+}
+
+.text-muted {
+    --bs-secondary-color: var(--evaty-color-text-rgb, .75);
+    opacity: .75;
 }

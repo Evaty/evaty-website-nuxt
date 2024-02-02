@@ -269,7 +269,7 @@ useHead({
     </div>
   </section>
 
-  <section class="container mb-50" id="pricing">
+  <section class="container mb-150" id="pricing">
     <div class="row align-items-center text-center pb-100">
       <h2 class="mb-0">Preisübersicht</h2>
     </div>
@@ -403,7 +403,7 @@ useHead({
     </div>
   </section>
 
-  <section class="container opacity-50">
+  <section class="container opacity-50 small-print">
     <div class="row">
       <div class="col-12">
         <p>

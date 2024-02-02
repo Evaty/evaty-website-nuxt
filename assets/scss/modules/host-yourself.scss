@@ -17,7 +17,7 @@
     }
 
     .header-image-inner-card {
-        background: white;
+        background: var(--evaty-color-container);
         border-radius: 20px;
         &.transparent {
             background-color: transparent;
@@ -85,14 +85,31 @@
     }
 }
 
-.support-card {
-    background: white;
-    border-radius: 20px;
-    padding: 80px 110px;
+section {
+    .row {
+        .support-card {
+            background: var(--evaty-color-container);
+            border-radius: 20px;
+            padding: 80px 110px;
+
+
+        }
+    }
+
+    &.small-print {
+        font-size: 12px;
+        p {
+            margin-bottom: 10px;
+        }
+    }
 }
 
-.pricing {
-    .title {
 
+#pricing {
+    .h2 {
+        margin-bottom: 16px;
+    }
+    ol {
+        list-style: none;
     }
 }
