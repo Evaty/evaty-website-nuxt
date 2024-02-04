@@ -4,9 +4,7 @@
             <div class="row pt-60 pb-60">
                 <div class="col-12 offset-md-6 col-md-5 offset-lg-7 col-lg-5 offset-xl-7 col-xl-5">
                     <div class="headline">
-                        <h2><span class="primary text-gradient">Download</span> im,
-                            Appstore
-                            und bald Google Playstore
+                        <h2 v-html="$t('components.download-teaser.text')">
                         </h2>
                     </div>
                     <div class="action d-flex align-items-center">

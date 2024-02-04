@@ -1,231 +1,235 @@
 {
-    "currentLang": "Deutsch (DE)",
-    "moment-locale": "de",
-    "tabs": {
-        "home": {
-            "section-citys": "Überall in Deutschland",
-            "section-sep-22": "Hast du schon ein Kostüm für die Party?"
-        }
+  "currentLang": "Deutsch (DE)",
+  "moment-locale": "de",
+  "categorys": {
+    "adventure": {
+      "course": "Kurse",
+      "fun": "Spaßige Erlebnisse",
+      "label": "Erlebnisse",
+      "tour": "Touren",
+      "workshops": "Workshops"
     },
+    "club": {
+      "label": "Club Shows"
+    },
+    "concert": {
+      "concerts": "Neuste",
+      "edm": "EDM Konzerte",
+      "indie": "Indie Konzerte",
+      "label": "Konzerte",
+      "metal": "Metal Konzerte",
+      "pop": "Pop Konzerte",
+      "rock": "Rock Konzerte"
+    },
+    "festival": {
+      "label": "Festivals",
+      "music-edm": "Elektro Festivals",
+      "music-festival": "Musik Festivals",
+      "music-hiphop": "HipHop Festivals",
+      "music-metal": "Metal Festivals",
+      "music-rock": "Rock Festivals"
+    },
+    "filter": "Filter",
+    "fitness": {
+      "label": "Fitness"
+    },
+    "market": {
+      "fleamarket": "Flohmarkt",
+      "name": "Märkte"
+    }
+  },
+  "components": {
+    "download-teaser": {
+      "text": "<span class=\"primary text-gradient\">Download</span> im, Appstore und bald Google Playstore"
+    }
+  },
+  "general": {
+    "accounts": "Konten",
+    "badges": {
+      "moderator": "Moderator",
+      "not-claimed": "Dieses Profil wurde noch nicht beansprucht!"
+    },
+    "cancel": "Abbrechen",
+    "close": "Schließen",
+    "contact-us": "Kontaktiere uns",
+    "create-list": "Liste erstellen",
+    "done": "Fertig",
+    "errors": {
+      "no-events": "Leider sind hier derzeit keine Events 😕",
+      "no-lists": "Hier findest du gerade keine Listen.",
+      "unexpected-error": "Es ist ein Fehler aufgetreten, bitte überprüfe deine Eingaben.",
+      "wrong-login": "Falsches Passwort oder Nutzername."
+    },
+    "events": "Event",
+    "follow": "Folgen",
+    "geo": {
+      "citys": {
+        "berlin": "Berlin",
+        "bielefeld": "Bielefeld",
+        "bremen": "Bremen",
+        "dortmund": "Dortmund",
+        "duesseldorf": "Düsseldorf",
+        "frankfurt": "Frankfurt",
+        "hamburg": "Hamburg",
+        "hannover": "Hannover",
+        "kiel": "Kiel",
+        "koeln": "Köln",
+        "leipzig": "Leipzig",
+        "muenchen": "München",
+        "muenster": "Münster",
+        "nuernberg": "Nürnberg",
+        "stuttgart": "Stuttgart"
+      },
+      "countrys": {
+        "germany": "Deutschland"
+      },
+      "current-location": "In deiner Gegend"
+    },
+    "lists": "Listen",
+    "logoff": "Möchtest du dich abmelden?",
+    "next": "Weiter",
+    "no": "Nein",
+    "save": "Speichern",
+    "search": "Suchen",
+    "searching": "Suchen",
+    "select-language": "Sprache wählen",
+    "share": "Teilen",
+    "tbd": "Wird noch festgelegt",
+    "unfollow": "Entfolgen",
+    "yes": "Ja"
+  },
+  "layout": {
+    "navigation": {
+      "about": "Über uns",
+      "category": "Kategorien",
+      "home": "Home",
+      "host-yourself": "Selber Veranstalten"
+    }
+  },
+  "page": {
     "home": {
-        "title": "Hey {name} 👋",
-        "recommended-categorys": "Stöbere in unseren Kategorien.",
-        "recommended-lists": "Empfohlende Listen",
-        "recommended-events": "Empfohlende Events",
-        "teaser-summer-22": "Genieße den Sommer, und lade andere dazu ein!",
-        "teaser-club-jan-23": "Auch im Winter muss man nicht mit dem Feiern aufhören.",
-        "teaser-fitness-jan-23": "Für deine Neujahrs Vorsätze. Finde Fitness Angebote."
-    },
-    "explore": {
-        "title": "Entdecken"
-    },
-    "bookmarks": {
-        "title": "Gespeichert",
-        "no-saves": "Du hast noch keine Events gespeichert."
-    },
-    "account": {
-        "title": "Dein Konto",
-        "created-events": "Erstellte Events",
-        "created-lists": "Erstellte Listen"
-    },
-    "on-boarding": {
-        "welcome": {
-            "title": "Willkommen",
-            "sub-title": "Hi, schön das du hergefunden hast",
-            "choose-lang": "Sprache wählen",
-            "next-no-account": "ohne konto Weiter"
-        },
-        "setup": {
-            "title": "Kontoeinrichtung",
-            "message": "Um fortzufahren, erstelle dir bitte ein Konto oder melde dich an."
-        },
-        "step-one": {
-            "hero-upper": "Willkommen! \uD83D\uDC4B",
-            "hero": "Lass uns dein Profil erstellen!"
-        },
-        "step-two": {
-            "display-name": "Anzeigename...",
-            "bio": "Bio..."
-        },
-        "step-three": {
-            "hero": "Welche Sprache sprichst du?"
-        },
-        "step-fourth": {
-            "hero-upper": "Fertig",
-            "hero": "Jetzt geht endlich los!"
-        },
-        "login": {
-            "title": "Anmeldung",
-            "hero-upper": "Willkommen zurück",
-            "hero": "Wir sind gleich soweit"
-        },
-        "register": {
-            "title": "Registrierung",
-            "hero-upper": "Hey, willkommen",
-            "hero": "Gleich geht’s los",
-            "success": "Du kannst dich jetzt in deinen Account anmelden."
-        },
-        "auth": {
-            "username": "Nutzername",
-            "password": "Passwort",
-            "email": "Email Adresse",
-            "sign-in": "Anmelden",
-            "sign-up": "Konto erstellen",
-            "sheet-title": "Was möchtest du tun?"
+      "header": {
+        "title": {
+          "primary": "Ein Platz für alles",
+          "secondary": ", was du erleben möchtest."
         }
+      },
+      "locations": {
+        "title": "Überall in Deutschland"
+      }
+    },
+    "host-yourself": {
+      "create-steps": {
+        "1": {
+          "button": "Sende uns eine Email",
+          "text": "Zuerst musst du dir ein Evaty-Benutzerkonto erstellen, danach schreibe uns eine Mail mit\n            deinem Benutzernamen und eine Erklärung für welche Veranstaltungen du unsere Seite\n            nutzen möchtest. (Wir können dir auch ein Nutzerkonto erstellen, erwähne dies einfach in\n            der Mail)",
+          "title": "1. Benutzerkonto erstellen"
+        },
+        "2": {
+          "text": "In unserer Grafischen-Oberfläche kannst du sobald wir deine anfrage bearbeitet haben\n            ganz einfach deine Veranstaltungen erstellen. Du musst nur ein paar Informationen\n            ausfüllen und wir bauen dir deine Seite. Du kannst auch jederzeit deine Veranstaltung\n            bearbeiten und deine Änderungen werden sofort übernommen.",
+          "title": "2. Erstelle dein Event"
+        },
+        "3": {
+          "text": "Der Letzte Schritt ist nun ganz einfach. Stelle deine Veranstaltung auf Öffentlich und\n            nun kann sie jeder im Internet sehen. Wir helfen dir dann deine Veranstaltung bekannter\n            zu machen und fügen sie zu unseren Kollektionen und Listen hinzu.",
+          "title": "3. Veröffentlichen"
+        },
+        "title": "Wie erstelle ich eine Veranstaltung?"
+      },
+      "features": {
+        "1": {
+          "text": "Das erstellen und bearbeiten deines Events wird kinderleicht.",
+          "title": "Einfache Handhabung"
+        },
+        "2": {
+          "text": "Wir suchen immer nach neuen und Spannenden Veranstaltungen die wir vorstellen können.",
+          "title": "Werde Vorgestellt"
+        },
+        "3": {
+          "text": "Verlinke deine Ticket-Seite und leite Traffic direkt zu deinen Tickets.",
+          "title": "Verkaufe Tickets"
+        },
+        "4": {
+          "text": "Nutzer können dein Profil abonnieren und bekommen benachrichtigungen über alle neuigkeiten.",
+          "title": "Kundenbindung"
+        },
+        "5": {
+          "text": "Erstelle und manage mehrere Veranstaltungen über ein Konto an einem Ort.",
+          "title": "Alles an einem Ort"
+        },
+        "6": {
+          "text": "Wir arbeiten ständing an unserer Seite und wollen dir alles bieten was du brauchst.",
+          "title": "Regelmäßige Updates"
+        },
+        "title": "Unsere Features"
+      },
+      "header": {
+        "text": "Es ist deine Zeit zu glänzen. Veranstalte dein eigenes Event und mache die Welt darauf\n              aufmerksam. Wir geben dir alle Werkzeuge an die Hand, um dir das Leben damit ein wenig\n              leichter zu machen. Wir veröffentlichen, verbreiten und verwalten die Veranstaltung\n              für die Nutzer unserer Plattform.",
+        "title": "Werde ein Teil von <span class=\"text-gradient\">Evaty</span>"
+      },
+      "help": {
+        "support": {
+          "button": "Sende uns eine Email",
+          "text": "Wir helfen dir gerne bei jedem Schritt den du mit uns machst. Egal ob du Hilfe beim erstellen deiner Veranstaltung brauchst, ob du Feedback an uns hast oder einfach deiner Veranstaltung noch ein bisschen mehr Reichtweite geben möchtest. <br/><br/>Melde dich einfach per Email an uns: hosts{'@'}evaty.net",
+          "title": "Support"
+        },
+        "title": "Was ist wenn ich hilfe brauche?"
+      },
+      "pricing": {
+        "ai": "Nutze AI",
+        "create": "Erstellen und verwalten",
+        "edu-care": {
+          "text": "Für Schüler- / Studenten-Verstaltungen und NPO's.",
+          "title": "EduCare"
+        },
+        "hobby": {
+          "text": "Starte dein Abenteuer komplett kostenlos.",
+          "title": "Hobby"
+        },
+        "included": "WAS IST ENTHALTEN?",
+        "month-short": "mo",
+        "plus": {
+          "text": "Perfekt für große oder mehrere Veranstaltungen im Jahr.",
+          "title": "Plus"
+        },
+        "presented": "Vorgestellt werden",
+        "small": {
+          "1": "Der EduCare plan ist gedacht für Schüler, Studenten und Schulveranstaltungen\n          sowie Gemeinnützige Organisationen. Schreibe uns eine Mail und weise nach das du zu den\n          Oben genannten Organisationen gehörst und wir werden dir unsere Plus features kostenlos\n          zur verfügung stellen."
+        },
+        "title": "Preisübersicht"
+      }
     },
     "event-detail": {
-        "title": "Event",
-        "place": "Wo findet es statt?",
-        "times": "Wann geht's los?",
-        "who": "Wer veranstaltet?",
-        "next-appointment": "Nächster Termin:",
-        "entry": "Anmelden",
-        "description": "Beschreibung",
-        "lineup": "Lineup"
-    },
-    "list-detail": {
-        "title": "Liste"
-    },
-    "creator": {
-        "lists": {
-            "title": "Liste erstellen",
-            "list-name": "Listen Name",
-            "from": "von",
-            "icon": "Icon*"
-        }
-    },
-    "updated": {
-        "title": "Willkommen zurück",
-        "hero-small": "Es gibt Neuigkeiten,",
-        "hero": "hier sind ein paar davon.",
-        "first": "Ein paar Design änderungen",
-        "second": "Fehlerbehebungen",
-        "third": "Erneuter Account reset :(",
-        "fourth": "Personalisiere dein Profil",
-        "fifth": "Überarbeitetes Design"
-    },
-    "event-modal": {
-        "add-to-list": "Zu Liste hinzufügen",
-        "add": "Hinzufügen"
-    },
-    "settings": {
-        "title": "Einstellungen",
-        "account-item": "Konto",
-        "logout": "Abmelden",
-        "version": "Version",
-        "account": {
-            "title": "Konto einstellungen",
-            "display-name": "Anzeigename",
-            "display-name-title": "Anzeigename ändern",
-            "bio": "Bio",
-            "bio-title": "Bio ändern",
-            "profile-picture": "Profilbild",
-            "profile-picture-title": "Profilbild ändern",
-            "profile-picture-tap": "Tippen um Profilbild zu ändern",
-            "language": "Sprache",
-            "language-title": "Sprache ändern",
-            "delete": "Konto löschen",
-            "delete-confirm": "Willst du deinen Account wirklich löschen?",
-            "delete-header": "Dein Account wird in 30 Tagen gelöscht.",
-            "delete-subheader": "Wenn du dich umentscheidest kannst du uns währendwessen jederzeit schreiben.",
-            "support": "Hilfe"
-        }
-    },
-    "categorys": {
-        "filter": "Filter",
-        "festival": {
-            "label": "Festivals",
-            "music-festival": "Musik Festivals",
-            "music-edm": "Elektro Festivals",
-            "music-metal": "Metal Festivals",
-            "music-rock": "Rock Festivals",
-            "music-hiphop": "HipHop Festivals"
-        },
-        "concert": {
-            "label": "Konzerte",
-            "concerts": "Neuste",
-            "edm": "EDM Konzerte",
-            "rock": "Rock Konzerte",
-            "pop": "Pop Konzerte",
-            "indie": "Indie Konzerte",
-            "metal": "Metal Konzerte"
-        },
-        "adventure": {
-            "label": "Erlebnisse",
-            "fun": "Spaßige Erlebnisse",
-            "workshops": "Workshops",
-            "course": "Kurse",
-            "tour": "Touren"
-        },
-        "fitness": {
-            "label": "Fitness"
-        },
-        "club": {
-            "label": "Club Shows"
-        },
-        "market": {
-            "name": "Märkte",
-            "fleamarket": "Flohmarkt"
-        }
-    },
-    "category": {
-        "adventure": {
-            "fun": "Spaßiges Abenteuer"
-        }
-    },
-    "general": {
-        "tbd": "Wird noch festgelegt",
-        "select-language": "Sprache wählen",
-        "cancel": "Abbrechen",
-        "next": "Weiter",
-        "searching": "Suchen",
-        "save": "Speichern",
-        "close": "Schließen",
-        "events": "Event",
-        "lists": "Listen",
-        "follow": "Folgen",
-        "unfollow": "Entfolgen",
-        "accounts": "Konten",
-        "share": "Teilen",
-        "search": "Suchen",
-        "yes": "Ja",
-        "no": "Nein",
-        "logoff": "Möchtest du dich abmelden?",
-        "done": "Fertig",
-        "create-list": "Liste erstellen",
-        "errors": {
-            "no-events": "Leider sind hier derzeit keine Events \uD83D\uDE15",
-            "unexpected-error": "Es ist ein Fehler aufgetreten, bitte überprüfe deine Eingaben.",
-            "wrong-login": "Falsches Passwort oder Nutzername.",
-            "no-lists": "Hier findest du gerade keine Listen."
-        },
-        "badges": {
-            "not-claimed": "Dieses Profil wurde noch nicht beansprucht!",
-            "moderator": "Moderator"
-        },
-        "geo": {
-            "citys": {
-                "hamburg": "Hamburg",
-                "berlin": "Berlin",
-                "koeln": "Köln",
-                "muenchen": "München",
-                "bielefeld": "Bielefeld",
-                "dortmund": "Dortmund",
-                "bremen": "Bremen",
-                "duesseldorf": "Düsseldorf",
-                "frankfurt": "Frankfurt",
-                "hannover": "Hannover",
-                "kiel": "Kiel",
-                "leipzig": "Leipzig",
-                "muenster": "Münster",
-                "nuernberg": "Nürnberg",
-                "stuttgart": "Stuttgart"
-            },
-            "countrys": {
-                "germany": "Deutschland"
-            },
-            "current-location": "In deiner Gegend"
-        }
+      "description": "Beschreibung",
+      "entry": "Anmelden",
+      "lineup": "Lineup",
+      "next-appointment": "Nächster Termin:",
+      "place": "Wo findet es statt?",
+      "times": "Wann geht's los?",
+      "title": "Event",
+      "who": "Wer veranstaltet?"
     }
+  },
+  "settings": {
+    "account": {
+      "bio": "Bio",
+      "bio-title": "Bio ändern",
+      "delete": "Konto löschen",
+      "delete-confirm": "Willst du deinen Account wirklich löschen?",
+      "delete-header": "Dein Account wird in 30 Tagen gelöscht.",
+      "delete-subheader": "Wenn du dich umentscheidest kannst du uns währendwessen jederzeit schreiben.",
+      "display-name": "Anzeigename",
+      "display-name-title": "Anzeigename ändern",
+      "language": "Sprache",
+      "language-title": "Sprache ändern",
+      "profile-picture": "Profilbild",
+      "profile-picture-tap": "Tippen um Profilbild zu ändern",
+      "profile-picture-title": "Profilbild ändern",
+      "support": "Hilfe",
+      "title": "Konto einstellungen"
+    },
+    "account-item": "Konto",
+    "logout": "Abmelden",
+    "title": "Einstellungen",
+    "version": "Version"
+  }
 }

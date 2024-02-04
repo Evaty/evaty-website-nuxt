@@ -76,6 +76,27 @@ export default defineNuxtConfig({
         locales: ['de', 'en'],
         defaultLocale: 'de',
     },
+    i18n: {
+        compilation: {
+            strictMessage: false,
+        },
+        lazy: true,
+        langDir: './locales',
+        defaultLocale: 'de-DE',
+        locales: [
+            {
+                code: 'de-DE',
+                file: 'de-DE.json',
+                domain: 'evaty.net',
+            },
+            {
+                code: 'en-US',
+                file: 'en-US.json',
+                domain: 'en.evaty.net'
+            }
+        ],
+        differentDomains: (process.env.NODE_ENV === 'production')
+    },
     routeRules: {
         '/': { swr: true },
         '/imprint': { prerender: true },

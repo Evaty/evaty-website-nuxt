@@ -156,7 +156,7 @@
       </div>
     </section>
 
-    <section class="container map pb-100">
+    <section class="container pb-100">
       <div class="row">
         <div class="col-12">
           <h2>Wer veranstaltet?</h2>

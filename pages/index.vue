@@ -10,15 +10,16 @@
           <div class="hero-search-container col-12 offset-lg-1 col-lg-10 offset-xl-6 col-xl-6">
             <!--            <form action="/listing/search" method="get">-->
             <h1>
-              <span class="primary text-gradient">Ein Platz für alles</span>, was du erleben
-              möchtest.
+              <span
+                  class="primary text-gradient">{{ $t('page.home.header.title.primary') }}</span>{{ $t('page.home.header.title.secondary') }}
             </h1>
             <evaty-form-group name="Suche" class="pt-30 pb-20">
-              <template #label>Suchen</template>
-              <input type="text" name="search" id="search-field" required/>
+              <template #label>{{ $t('general.search') }}</template>
+              <input type="text" name="search" id="search-field" placeholder="Hurricane fest..." required/>
             </evaty-form-group>
-            <evaty-button type="primary" block> Suchen</evaty-button>
-            <div class="d-flex justify-content-center pt-10">
+            <evaty-button type="primary" block>{{ $t('general.search') }}</evaty-button>
+            <!-- TODO enable when location serach is enabled-->
+            <div class="d-flex justify-content-center pt-10" v-if="false">
               <router-link to="/location" class="text-center"
               ><span class="evaty-link evaty-color-text-primary-500 text-center"
               >oder nach Orten suchen</span
@@ -54,7 +55,7 @@
   <section class="container pb-150">
     <div class="row pb20">
       <div class="col-12">
-        <h2>{{ $t('tabs.home.section-citys') }}</h2>
+        <h2>{{ $t('page.home.locations.title') }}</h2>
       </div>
     </div>
     <div class="row">
@@ -80,8 +81,6 @@
     </div>
   </section>
 
-  <!--  TODO responsive-->
-  <h1 class="evaty-color-text-danger-500">TODO: Make responsive</h1>
   <EvatyTeaserDownload/>
 
   <section id="category" class="mb-150 container">

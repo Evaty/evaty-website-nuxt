@@ -1,208 +1,81 @@
 {
   "currentLang": "English (US)",
   "moment-locale": "en",
-  "tabs": {
-    "home": {
-      "section-citys": "All over Germany",
-      "section-sep-22": "Hast du schon ein Kostüm für die Party?"
-    }
-  },
-  "home": {
-    "title": "Hey {name} \uD83D\uDC4B",
-    "recommended-categorys": "Suggested categories",
-    "recommended-lists": "Suggested Lists",
-    "recommended-events": "Suggested Events",
-    "teaser-summer-22": "Enjoy the summer, and invite others to do the same!",
-    "teaser-club-jan-23": "Auch im Winter muss man nicht mit dem Feiern aufhören.",
-    "teaser-fitness-jan-23": "Even in winter, you don't have to stop partying."
-  },
-  "bookmarks": {
-    "title": "Saved",
-    "no-saves": "You have not saved any events yet."
-  },
-  "account": {
-    "title": "Your account",
-    "created-events": "Created events",
-    "created-lists": "Created lists"
-  },
-  "on-boarding": {
-    "welcome": {
-      "title": "Welcome",
-      "sub-title": "Hi, nice that you have found here",
-      "choose-lang": "Select language",
-      "next-no-account": "continue without account"
-    },
-    "setup": {
-      "title": "Account setup",
-      "message": "To continue, please create an account or sign in."
-    },
-    "step-one": {
-      "hero-upper": "Welcome! \uD83D\uDC4B",
-      "hero": "Let's create your profile!"
-    },
-    "step-two": {
-      "display-name": "Display name...",
-      "bio": "Bio..."
-    },
-    "step-three": {
-      "hero": "What language do you speak?"
-    },
-    "step-fourth": {
-      "hero-upper": "You're ready",
-      "hero": "Now it's finally time to go!"
-    },
-    "login": {
-      "title": "Sign in",
-      "hero-upper": "Welcome back",
-      "hero": "We are almost ready"
-    },
-    "register": {
-      "title": "Registration",
-      "hero-upper": "Hey, welcome",
-      "hero": "Almost ready to go",
-      "success": "You can log in to your account now."
-    },
-    "auth": {
-      "username": "username",
-      "password": "Password",
-      "email": "Email Address",
-      "sign-in": "Sign in",
-      "sign-up": "Sign up",
-      "sheet-title": "What do you want to do?"
-    }
-  },
-  "event-detail": {
-    "title": "Event",
-    "place": "Where will it take place?",
-    "times": "When does it start?",
-    "who": "Who is hosting?",
-    "next-appointment": "Next date:",
-    "entry": "Register for event"
-  },
-  "list-detail": {
-    "title": "List"
-  },
-  "creator": {
-    "lists": {
-      "title": "Create list",
-      "list-name": "List Name",
-      "from": "from",
-      "icon": "Icon*"
-    }
-  },
-  "updated": {
-    "title": "Welcome back",
-    "hero-small": "There is news,",
-    "hero": "here are a some of them.",
-    "first": "A few design changes",
-    "second": "Bug fixes",
-    "third": "Another account reset :(",
-    "fourth": "Personalize your profile",
-    "fifth": "Revised design"
-  },
-  "event-modal": {
-    "add-to-list": "Add to list",
-    "add": "Add"
-  },
-  "settings": {
-    "title": "Settings",
-    "account-item": "Account",
-    "logout": "Logout",
-    "version": "Version",
-    "account": {
-      "title": "Account settings",
-      "display-name": "Display name",
-      "display-name-title": "Change display name",
-      "bio": "Bio",
-      "bio-title": "Change bio",
-      "profile-picture": "Profile picture",
-      "profile-picture-title": "Change profile picture",
-      "profile-picture-tap": "Tap to change profile picture",
-      "language": "Language",
-      "language-title": "Change language",
-      "delete": "Delete account",
-      "delete-confirm": "Do you really want to delete your account?",
-      "delete-header": "Your account will be deleted in 30 days.",
-      "delete-subheader": "If you change your mind, you can always write to us in the meantime.",
-      "support": "Support"
-    }
-  },
   "categorys": {
-    "filter": "Filter",
-    "festival": {
-      "label": "Festivals",
-      "music-festival": "Music Festivals",
-      "music-edm": "Electro Festivals",
-      "music-metal": "Metal Festivals",
-      "music-rock": "Rock Festivals",
-      "music-hiphop": "Hiphop Festivals"
+    "adventure": {
+      "course": "Courses",
+      "fun": "Fun Experiences",
+      "label": "Experiences",
+      "tour": "Tours",
+      "workshops": "Workshops"
+    },
+    "club": {
+      "label": "Club Shows"
     },
     "concert": {
-      "label": "Concerts",
       "concerts": "Latest",
       "edm": "EDM concerts",
-      "rock": "Rock concerts",
-      "pop": "Pop concerts",
       "indie": "Indie concerts",
-      "metal": "Metal concerts"
+      "label": "Concerts",
+      "metal": "Metal concerts",
+      "pop": "Pop concerts",
+      "rock": "Rock concerts"
     },
-    "adventure": {
-      "label": "Experiences",
-      "fun": "Fun Experiences",
-      "workshops": "Workshops",
-      "course": "Courses",
-      "tour": "Tours"
+    "festival": {
+      "label": "Festivals",
+      "music-edm": "Electro Festivals",
+      "music-festival": "Music Festivals",
+      "music-hiphop": "Hiphop Festivals",
+      "music-metal": "Metal Festivals",
+      "music-rock": "Rock Festivals"
+    },
+    "filter": "Filter",
+    "fitness": {
+      "label": "Fitness"
+    },
+    "market": {
+      "fleamarket": "Fleamarkets",
+      "name": "Market"
     }
   },
-  "category": {
-    "adventure": {
-      "fun": "Fun adventure"
+  "components": {
+    "download-teaser": {
+      "text": "<span class=\"primary text-gradient\">Download</span> in the, Appstore und soon Google Playstore"
     }
   },
   "general": {
-    "tbd": "To be defined",
-    "select-language": "Choose language",
-    "cancel": "Cancel",
-    "next": "Continue",
-    "searching": "Search",
-    "save": "Save",
-    "close": "Close",
-    "events": "Events",
-    "lists": "Lists",
-    "follow": "Follow",
-    "unfollow": "Unfollow",
     "accounts": "Accounts",
-    "share": "Share",
-    "search": "Search",
-    "done": "Done",
-    "yes": "Yes",
-    "no": "No",
-    "logoff": "You want to log off?",
-    "create-list": "Create List",
-    "errors": {
-      "no-events": "Unfortunately there are no events here at the moment \uD83D\uDE15",
-      "unexpected-error": "An error has occurred, please check your input.",
-      "wrong-login": "Incorrect password or username.",
-      "no-lists": "You won't find any lists here right now."
-    },
     "badges": {
-      "not-claimed": "This profile has not been claimed yet!",
-      "moderator": "Moderator"
+      "moderator": "Moderator",
+      "not-claimed": "This profile has not been claimed yet!"
     },
+    "cancel": "Cancel",
+    "close": "Close",
+    "contact-us": "Contact us",
+    "create-list": "Create List",
+    "done": "Done",
+    "errors": {
+      "no-events": "Unfortunately there are no events here at the moment 😕",
+      "no-lists": "You won't find any lists here right now.",
+      "unexpected-error": "An error has occurred, please check your input.",
+      "wrong-login": "Incorrect password or username."
+    },
+    "events": "Events",
+    "follow": "Follow",
     "geo": {
       "citys": {
-        "hamburg": "Hamburg",
         "berlin": "Berlin",
-        "koeln": "Cologne",
-        "muenchen": "Munich",
         "bielefeld": "Bielefeld",
-        "dortmund": "Dortmund",
         "bremen": "Bremen",
+        "dortmund": "Dortmund",
         "duesseldorf": "Düsseldorf",
         "frankfurt": "Frankfurt",
+        "hamburg": "Hamburg",
         "hannover": "Hanover",
         "kiel": "Kiel",
+        "koeln": "Cologne",
         "leipzig": "Leipzig",
+        "muenchen": "Munich",
         "muenster": "Münster",
         "nuernberg": "Nuremberg",
         "stuttgart": "Stuttgart"
@@ -211,6 +84,152 @@
         "germany": "Germany"
       },
       "current-location": "In your area"
+    },
+    "lists": "Lists",
+    "logoff": "You want to log off?",
+    "next": "Continue",
+    "no": "No",
+    "save": "Save",
+    "search": "Search",
+    "searching": "Search",
+    "select-language": "Choose language",
+    "share": "Share",
+    "tbd": "To be defined",
+    "unfollow": "Unfollow",
+    "yes": "Yes"
+  },
+  "layout": {
+    "navigation": {
+      "about": "About us",
+      "category": "Category's",
+      "home": "Home",
+      "host-yourself": "Host yourself"
     }
+  },
+  "page": {
+    "home": {
+      "header": {
+        "title": {
+          "primary": "A place for anything",
+          "secondary": " you want to experience."
+        }
+      },
+      "locations": {
+        "title": "All over Germany"
+      }
+    },
+    "host-yourself": {
+      "create-steps": {
+        "1": {
+          "button": "Sende uns eine Email",
+          "text": "Zuerst musst du dir ein Evaty-Benutzerkonto erstellen, danach schreibe uns eine Mail mit deinem Benutzernamen und eine Erklärung für welche Veranstaltungen du unsere Seite\n            nutzen möchtest. (Wir können dir auch ein Nutzerkonto erstellen, erwähne dies einfach in\n            der Mail)",
+          "title": "1. Benutzerkonto erstellen"
+        },
+        "2": {
+          "text": "In unserer Grafischen-Oberfläche kannst du sobald wir deine anfrage bearbeitet haben ganz einfach deine Veranstaltungen erstellen. Du musst nur ein paar Informationen\n            ausfüllen und wir bauen dir deine Seite. Du kannst auch jederzeit deine Veranstaltung\n            bearbeiten und deine Änderungen werden sofort übernommen.",
+          "title": "2. Erstelle dein Event"
+        },
+        "3": {
+          "text": "Der Letzte Schritt ist nun ganz einfach. Stelle deine Veranstaltung auf Öffentlich und nun kann sie jeder im Internet sehen. Wir helfen dir dann deine Veranstaltung bekannter\n            zu machen und fügen sie zu unseren Kollektionen und Listen hinzu.",
+          "title": "3. Veröffentlichen"
+        },
+        "title": "Wie erstelle ich eine Veranstaltung?"
+      },
+      "features": {
+        "1": {
+          "text": "Das erstellen und bearbeiten deines Events wird kinderleicht.",
+          "title": "Einfache Handhabung"
+        },
+        "2": {
+          "text": "Wir suchen immer nach neuen und Spannenden Veranstaltungen die wir vorstellen können.",
+          "title": "Werde Vorgestellt"
+        },
+        "3": {
+          "text": "Verlinke deine Ticket-Seite und leite Traffic direkt zu deinen Tickets.",
+          "title": "Verkaufe Tickets"
+        },
+        "4": {
+          "text": "Nutzer können dein Profil abonnieren und bekommen benachrichtigungen über alle neuigkeiten.",
+          "title": "Kundenbindung"
+        },
+        "5": {
+          "text": "Erstelle und manage mehrere Veranstaltungen über ein Konto an einem Ort.",
+          "title": "Alles an einem Ort"
+        },
+        "6": {
+          "text": "Wir arbeiten ständing an unserer Seite und wollen dir alles bieten was du brauchst.",
+          "title": "Regelmäßige Updates"
+        },
+        "title": "Unsere Features"
+      },
+      "header": {
+        "text": "Es ist deine Zeit zu glänzen. Veranstalte dein eigenes Event und mache die Welt darauf\n              aufmerksam. Wir geben dir alle Werkzeuge an die Hand, um dir das Leben damit ein wenig\n              leichter zu machen. Wir veröffentlichen, verbreiten und verwalten die Veranstaltung\n              für die Nutzer unserer Plattform.",
+        "title": "Werde ein Teil von <span class=\"text-gradient\">Evaty</span>"
+      },
+      "help": {
+        "support": {
+          "button": "Sende uns eine Email",
+          "text": "Wir helfen dir gerne bei jedem Schritt den du mit uns machst. Egal ob du Hilfe beim\n              erstellen deiner Veranstaltung brauchst, ob du Feedback an uns hast oder einfach\n              deiner Veranstaltung noch ein bisschen mehr Reichtweite geben möchtest. <br/><br/>\n              Melde dich einfach per Email an uns: hosts{'@'}evaty.net",
+          "title": "Support"
+        },
+        "title": "Was ist wenn ich hilfe brauche?"
+      },
+      "pricing": {
+        "ai": "Nutze AI",
+        "create": "Erstellen und verwalten",
+        "edu-care": {
+          "text": "Für Schüler- / Studenten-Verstaltungen und NPO's.",
+          "title": "EduCare"
+        },
+        "hobby": {
+          "text": "Starte dein Abenteuer komplett kostenlos.",
+          "title": "Hobby"
+        },
+        "included": "WAS IST ENTHALTEN?",
+        "month-short": "mo",
+        "plus": {
+          "text": "Perfekt für große oder mehrere Veranstaltungen im Jahr.",
+          "title": "Plus"
+        },
+        "presented": "Vorgestellt werden",
+        "small": {
+          "1": "Der EduCare plan ist gedacht für Schüler, Studenten und Schulveranstaltungen\n          sowie Gemeinnützige Organisationen. Schreibe uns eine Mail und weise nach das du zu den\n          Oben genannten Organisationen gehörst und wir werden dir unsere Plus features kostenlos\n          zur verfügung stellen."
+        },
+        "title": "Preisübersicht"
+      }
+    },
+    "event-detail": {
+      "description": "Description",
+      "entry": "Register for event",
+      "lineup": "Lineup",
+      "next-appointment": "Next date:",
+      "place": "Where will it take place?",
+      "times": "When does it start?",
+      "title": "Event",
+      "who": "Who is hosting?"
+    }
+  },
+  "settings": {
+    "account": {
+      "bio": "Bio",
+      "bio-title": "Change bio",
+      "delete": "Delete account",
+      "delete-confirm": "Do you really want to delete your account?",
+      "delete-header": "Your account will be deleted in 30 days.",
+      "delete-subheader": "If you change your mind, you can always write to us in the meantime.",
+      "display-name": "Display name",
+      "display-name-title": "Change display name",
+      "language": "Language",
+      "language-title": "Change language",
+      "profile-picture": "Profile picture",
+      "profile-picture-tap": "Tap to change profile picture",
+      "profile-picture-title": "Change profile picture",
+      "support": "Support",
+      "title": "Account settings"
+    },
+    "account-item": "Account",
+    "logout": "Logout",
+    "title": "Settings",
+    "version": "Version"
   }
 }
