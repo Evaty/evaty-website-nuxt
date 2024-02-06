@@ -10,6 +10,8 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@dargmuesli/nuxt-cookie-control": "^7.2.5",
+    "@mapbox/mapbox-gl-geocoder": "^5.0.2",
     "@nuxtjs/i18n": "^8.0.0",
     "dayjs-nuxt": "^2.1.9",
     "mapbox-gl": "^3.1.2",
@@ -20,6 +22,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@turf/distance": "^6.5.0",
     "evaty-component-lib": "^0.3.1",
     "nuxt-swiper": "^1.2.2"
   }

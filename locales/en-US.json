@@ -1,6 +1,4 @@
 {
-  "currentLang": "English (US)",
-  "moment-locale": "en",
   "categorys": {
     "adventure": {
       "course": "Courses",
@@ -43,6 +41,7 @@
       "text": "<span class=\"primary text-gradient\">Download</span> in the, Appstore und soon Google Playstore"
     }
   },
+  "currentLang": "English (US)",
   "general": {
     "accounts": "Accounts",
     "badges": {
@@ -106,7 +105,18 @@
       "host-yourself": "Host yourself"
     }
   },
+  "moment-locale": "en",
   "page": {
+    "event-detail": {
+      "description": "Description",
+      "entry": "Register for event",
+      "lineup": "Lineup",
+      "next-appointment": "Next date:",
+      "place": "Where will it take place?",
+      "times": "When does it start?",
+      "title": "Event",
+      "who": "Who is hosting?"
+    },
     "home": {
       "header": {
         "title": {
@@ -116,7 +126,8 @@
       },
       "locations": {
         "title": "All over Germany"
-      }
+      },
+      "recommended-categorys": "Recoimmended Category's"
     },
     "host-yourself": {
       "create-steps": {
@@ -197,16 +208,6 @@
         },
         "title": "Preisübersicht"
       }
-    },
-    "event-detail": {
-      "description": "Description",
-      "entry": "Register for event",
-      "lineup": "Lineup",
-      "next-appointment": "Next date:",
-      "place": "Where will it take place?",
-      "times": "When does it start?",
-      "title": "Event",
-      "who": "Who is hosting?"
     }
   },
   "settings": {

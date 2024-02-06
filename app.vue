@@ -1,6 +1,7 @@
 <template>
   <NuxtLayout>
     <NuxtPage/>
+    <CookieControl :locale="$t('moment-locale')" />
   </NuxtLayout>
 </template>
 <script setup lang="ts">

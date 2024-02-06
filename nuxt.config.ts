@@ -59,7 +59,8 @@ export default defineNuxtConfig({
         '@nuxtjs/i18n',
         'nuxt-swiper',
         'nuxt-mapbox',
-        'dayjs-nuxt'
+        'dayjs-nuxt',
+        '@dargmuesli/nuxt-cookie-control'
     ],
     css: [
         '@/assets/scss/app.scss',
@@ -70,7 +71,8 @@ export default defineNuxtConfig({
         '@/assets/fonts/fontawesome/css/regular.css',
     ],
     mapbox: {
-        accessToken: 'pk.eyJ1IjoiZXZhdHkiLCJhIjoiY2t0ZDVrMXRpMG0zbjJxcnd4OXk5OTQxMyJ9.zYhGJkZ3Qh-gzy-ay7DB_Q'
+        accessToken: 'pk.eyJ1IjoiZXZhdHkiLCJhIjoiY2t0ZDVrMXRpMG0zbjJxcnd4OXk5OTQxMyJ9.zYhGJkZ3Qh-gzy-ay7DB_Q',
+        persistent: false
     },
     dayjs: {
         locales: ['de', 'en'],
@@ -97,14 +99,39 @@ export default defineNuxtConfig({
         ],
         differentDomains: (process.env.NODE_ENV === 'production')
     },
+    cookieControl:
+        {
+            locales: ['de', 'en'],
+            cookies: {
+                necessary: [
+                    {
+                        id: 'i18n_redirected',
+                        name: {
+                            de: 'Spracheinstellungen',
+                            en: 'Language preferences'
+                        },
+                        targetCookieIds: ['i18n_redirected']
+                    },
+                    {
+                        id: 'ncc_c',
+                        name: {
+                            de: 'Cookieeinstellungen',
+                            en: 'Cookie preferences'
+                        },
+                        targetCookieIds: ['ncc_c']
+                    }
+                ],
+                optional: []
+            }
+        },
     routeRules: {
-        '/': { swr: true },
-        '/imprint': { prerender: true },
-        '/privacy': { prerender: true },
-        '/terms': { prerender: true },
-        '/about': { prerender: true },
-        '/host-yourself': { prerender: true },
-        '/category': { swr: true },
-        '/event/**': { swr: 3600 },
+        '/': {swr: true},
+        '/imprint': {prerender: true},
+        '/privacy': {prerender: true},
+        '/terms': {prerender: true},
+        '/about': {prerender: true},
+        '/host-yourself': {prerender: true},
+        '/category': {swr: true},
+        '/event/**': {swr: 3600},
     }
 })

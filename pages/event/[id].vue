@@ -235,8 +235,18 @@ const dayjs = useDayjs();
 const uri = 'https://api.evaty.net/api/v1/event/' + id;
 const {data: event, pending} = await useLazyFetch(uri, {key: id});
 
-useHead({
-  title: event.value?.name
+useSeoMeta({
+  title: event.value.name,
+  description: event.value.smallDescription,
+  appleItunesApp: {
+    appId: "1562916647",
+    appArgument:"/event/"+event.value.id,
+  },
+  ogType: "website",
+  ogTitle: event.value.name,
+  ogDescription: event.value.smallDescription,
+  ogImage: event.value.media[0]?.url,
+
 })
 
 function getFilteredBadges(host) {

@@ -1,6 +1,4 @@
 {
-  "currentLang": "Deutsch (DE)",
-  "moment-locale": "de",
   "categorys": {
     "adventure": {
       "course": "Kurse",
@@ -43,6 +41,7 @@
       "text": "<span class=\"primary text-gradient\">Download</span> im, Appstore und bald Google Playstore"
     }
   },
+  "currentLang": "Deutsch (DE)",
   "general": {
     "accounts": "Konten",
     "badges": {
@@ -106,7 +105,18 @@
       "host-yourself": "Selber Veranstalten"
     }
   },
+  "moment-locale": "de",
   "page": {
+    "event-detail": {
+      "description": "Beschreibung",
+      "entry": "Anmelden",
+      "lineup": "Lineup",
+      "next-appointment": "Nächster Termin:",
+      "place": "Wo findet es statt?",
+      "times": "Wann geht's los?",
+      "title": "Event",
+      "who": "Wer veranstaltet?"
+    },
     "home": {
       "header": {
         "title": {
@@ -116,7 +126,8 @@
       },
       "locations": {
         "title": "Überall in Deutschland"
-      }
+      },
+      "recommended-categorys": "Vorgestellte Kategorien"
     },
     "host-yourself": {
       "create-steps": {
@@ -197,16 +208,6 @@
         },
         "title": "Preisübersicht"
       }
-    },
-    "event-detail": {
-      "description": "Beschreibung",
-      "entry": "Anmelden",
-      "lineup": "Lineup",
-      "next-appointment": "Nächster Termin:",
-      "place": "Wo findet es statt?",
-      "times": "Wann geht's los?",
-      "title": "Event",
-      "who": "Wer veranstaltet?"
     }
   },
   "settings": {

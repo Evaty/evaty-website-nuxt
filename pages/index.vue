@@ -86,7 +86,7 @@
   <section id="category" class="mb-150 container">
     <div class="row pb-20">
       <div class="col-12">
-        <h2>{{ $t('home.recommended-categorys') }}</h2>
+        <h2>{{ $t('page.home.recommended-categorys') }}</h2>
       </div>
     </div>
     <div class="row">
