@@ -49,10 +49,9 @@ export default defineNuxtConfig({
         }
     },
     devtools: {
-        enabled: true,
-
+        enabled: false,
         timeline: {
-            enabled: true
+            enabled: false
         }
     },
     modules: [
@@ -63,8 +62,8 @@ export default defineNuxtConfig({
         '@dargmuesli/nuxt-cookie-control'
     ],
     css: [
-        '@/assets/scss/app.scss',
         'evaty-component-lib/dist/style.css',
+        '@/assets/scss/app.scss',
         '@/assets/fonts/fontawesome/css/fontawesome.css',
         '@/assets/fonts/fontawesome/css/solid.css',
         '@/assets/fonts/fontawesome/css/brands.css',
@@ -133,5 +132,6 @@ export default defineNuxtConfig({
         '/host-yourself': {prerender: true},
         '/category': {swr: true},
         '/event/**': {swr: 3600},
+        '/map': {ssr: false}
     }
 })

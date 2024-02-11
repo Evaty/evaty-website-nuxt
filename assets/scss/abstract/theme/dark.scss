@@ -1,0 +1,9 @@
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+
+    --evaty-color-background: #111111;
+  }
+  #footer {
+    background-color: var(--evaty-color-background);
+  }
+}

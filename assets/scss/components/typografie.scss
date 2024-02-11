@@ -1,25 +1,19 @@
 body, html {
     font-size: 16px;
-    color: var(--ev-color-text, #000000);
+    color: var(--evaty-color-text, #000000);
     font-weight: 500;
-    font-family: var(--ev-font-family);
-}
-
-a, .link {
-    color: var(--ev-color-primary-500);
+    font-family: var(--evaty-font-family);
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    color: var(--ev-color-text);
-    font-family: var(--ev-font-family);
+    color: var(--evaty-color-text);
+    font-family: var(--evaty-font-family);
     font-weight: 700;
 }
 
-h1, .h1, h2, .h2 {
-    font-weight: 800;
-}
 
 h1, .h1 {
+    font-weight: 800;
     font-size: 40px;
     @include media-breakpoint-up(md) {
         font-size: 48px;
@@ -27,6 +21,7 @@ h1, .h1 {
 }
 
 .h2, h2 {
+    font-weight: 800;
     font-size: 30px;
     @include media-breakpoint-up(md) {
         font-size: 32px;
@@ -36,7 +31,7 @@ h1, .h1 {
 }
 
 .evaty-text-primary {
-    color: var(--ev-color-primary-500);
+    color: var(--evaty-color-primary-500);
 }
 
 .text-muted {

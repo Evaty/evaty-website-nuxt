@@ -8,12 +8,11 @@
         height: 550px;
         display: flex;
         align-items: center;
-
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
         border-radius: 20px;
+        background: var(--evaty-color-container);
         .content {
             display: flex;
             flex-direction: column;
@@ -41,8 +40,12 @@
                 font-weight: 800;
                 font-size: 50px;
                 .primary {
-                    color: var(--color-primary)
+                    color: var(--color-primary);
                 }
+            }
+            p {
+                color: var(--evaty-color-text);
+                opacity: .7;
             }
             .cap {
                 font-weight: 500;

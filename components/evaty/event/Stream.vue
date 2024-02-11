@@ -16,7 +16,7 @@
         </SwiperSlide>
       </template>
       <template v-else>
-        <SwiperSlide v-for="event in stream.content">
+        <SwiperSlide v-for="event in stream?.content">
           <evaty-event-card :src="event.media[0]?.url" :href="`/event/${event.id}`">
             <template #category>{{ $t(event.category.label) }}</template>
             <template #title>{{ event.name }}</template>

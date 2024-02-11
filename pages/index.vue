@@ -71,7 +71,7 @@
             class="swiper-overflow"
         >
           <swiper-slide v-for="city in citys" :key="city.city">
-            <evaty-town-card :href="'/location?' + city.coords" :src="city.img">
+            <evaty-town-card :href="'/map?' + city.coords" :src="city.img">
               <template #name>{{ $t('general.geo.citys.' + city.city) }}</template>
               <template #country>{{ $t('general.geo.countrys.' + city.country) }}</template>
             </evaty-town-card>

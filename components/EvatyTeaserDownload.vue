@@ -14,8 +14,8 @@
                     </div>
                 </div>
             </div>
-            <img srcset="../assets/images/home/promo-download-22/promo-22-download-background@2x.png 2x"
-                 src="../assets/images/home/promo-download-22/promo-22-download-background.png"
+            <img srcset="../assets/images/pages/about/about-banner-background@2x.png 2x"
+                 src="../assets/images/pages/about/about-banner-background.png"
                  alt="Iphone present Evaty-App">
         </div>
     </section>

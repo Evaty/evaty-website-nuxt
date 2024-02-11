@@ -14,22 +14,11 @@ useHead({
 
 <template>
 
-  <section class="container pb-150 header-image pt-100">
+  <section class="container header-image pt-100">
+
     <div class="row">
       <div class="col-12 pb-20">
         <h1>{{ $t("categorys.festival.label") }}</h1>
-      </div>
-      <div class="col-12 header-image-inner-card transparent">
-        <div class="row">
-          <div class="col-12" style="width: 100%; height: 400px;">
-            <mapbox-map map-id="festival-map"
-                        style="width: 100%; height: 400px; border-radius: var(--evaty-border-radius, 7px)"
-                        :options="{
-                          style: 'mapbox://styles/mapbox/streets-v12'
-                        }"
-            ></mapbox-map>
-          </div>
-        </div>
       </div>
     </div>
     <img src="@/assets/images/categorys/header-images/festival-header.png" alt=""/>

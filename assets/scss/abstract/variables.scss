@@ -6,3 +6,7 @@ $grid-breakpoints: (
         xl: 1200px,
         xxl: 1400px
 );
+
+:root {
+  --swiper-theme-color: var(--evaty-color-primary-500)!important;
+}

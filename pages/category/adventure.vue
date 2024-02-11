@@ -19,18 +19,13 @@ useHead({
       <div class="col-12 pb-20">
         <h1>{{ $t("categorys.adventure.label") }}</h1>
       </div>
-      <div class="col-12 header-image-inner-card transparent">
-        <div class="row">
-          <div class="col-12" style="width: 100%; height: 400px;">
-            <mapbox-map map-id="adventure-map"
-                        style="width: 100%; height: 400px; border-radius: var(--evaty-border-radius, 7px)"
-                        :options="{
-                          style: 'mapbox://styles/mapbox/streets-v12'
-                        }"
-            ></mapbox-map>
-          </div>
-        </div>
-      </div>
+<!--      <div class="col-12 header-image-inner-card transparent">-->
+<!--        <div class="row">-->
+<!--          <div class="col-12" style="width: 100%; height: 400px;">-->
+<!--&lt;!&ndash;            <evaty-event-category-map :stream="category?.content"></evaty-event-category-map>&ndash;&gt;-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
     <img src="@/assets/images/categorys/header-images/adventure-header.png" alt=""/>
   </section>
@@ -41,7 +36,7 @@ useHead({
         <h2 class="text-center">Hier gibt's leider noch nichts zu sehen</h2>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mb-4" v-for="event in category.content" :key="event.id">
-        <evaty-event-card :src="event.media[0]?.url" :href="`/event/${event.id}`">
+        <evaty-event-card :src="event.media[0]?.url" :href="`/event/${event.id}`" :id="event.id">
           <template #category>{{ $t(event.category.label) }}</template>
           <template #title>{{ event.name }}</template>
           <template #description>{{ event.smallDescription }}</template>

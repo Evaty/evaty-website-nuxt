@@ -21,11 +21,15 @@ function changeLanguage(lang: string) {
             <span class="footer-link-head">Nützliches</span>
             <span class="footer-link"><a href="https://evaty-app.statuspage.io"
                                          target="_blank">Status</a></span>
-            <span class="footer-link"><a href="https://hosts.evaty.net/login"
-                                         rel="nofollow">Veranstalter-Login</a></span>
-            <span class="footer-link"><router-link to="/support">Support Center</router-link></span>
+<!--            <span class="footer-link"><nuxt-link to="/support">Support Center</nuxt-link></span>-->
           </div>
           <div class="footer-link-list-item">
+            <span class="footer-link-head">Für Veranstalter</span>
+            <span class="footer-link"><nuxt-link to="/host-yourself">{{ $t("layout.navigation.host-yourself") }}</nuxt-link></span>
+            <span class="footer-link"><a href="https://hosts.evaty.net/login"
+                                         rel="nofollow">Veranstalter-Login</a></span>
+          </div>
+          <div class="footer-link-list-item" v-if="false">
             <span class="footer-link-head">HERUNTERLADEN</span>
             <span class="footer-link"><a href="https://apps.apple.com/de/app/evaty/id1562916647"
                                          target="_blank">IPhone</a></span>
@@ -33,9 +37,9 @@ function changeLanguage(lang: string) {
           </div>
           <div class="footer-link-list-item">
             <span class="footer-link-head">Rechtliches</span>
-            <span class="footer-link"><router-link to="/imprint">Impressum</router-link></span>
-            <span class="footer-link"><router-link to="/privacy">Datenschutz</router-link></span>
-            <span class="footer-link"><router-link to="/terms">Nutzungsbedingungen</router-link></span>
+            <span class="footer-link"><nuxt-link to="/imprint">Impressum</nuxt-link></span>
+            <span class="footer-link"><nuxt-link to="/privacy">Datenschutz</nuxt-link></span>
+            <span class="footer-link"><nuxt-link to="/terms">Nutzungsbedingungen</nuxt-link></span>
           </div>
         </div>
       </div>

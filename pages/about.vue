@@ -6,6 +6,7 @@
           <div class="content">
             <div class="headline">
               <h1><span class="primary text-gradient">Ein Platz für alles</span>, was du erleben möchtest.</h1>
+              <p>Unsere Mission: Wir möchten echte Gefühle und Emotionen zeigen, neue Erinnerungen schaffen und den tristen Alltag bunter gestalten.</p>
             </div>
           </div>
         </div>
@@ -156,7 +157,7 @@
   <EvatyTeaserDownload/>
 </template>
 <script setup lang="ts">
-import heroImage from '@/assets/images/pages/about/banner-new-one.png'
+import heroImage from '@/assets/images/pages/about/about-page-hero.png'
 useHead({
   title: "Über uns"
 })
