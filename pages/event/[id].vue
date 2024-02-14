@@ -17,11 +17,11 @@
         </div>
       </div>
       <div class="row information-lists">
-        <div class="col-md-6 col-12" v-if="event.eventHighlights?.length > 0">
+        <div class="col-lg-6 col-12" v-if="event.eventHighlights?.length > 0">
           <h2 class="list-headline">Highlights</h2>
           <div class="row list">
             <div
-                class="list-item col-6 pb-20"
+                class="list-item col-12 col-md-6 pb-20"
                 v-for="highlight in event.eventHighlights"
                 :key="highlight.key"
             >
@@ -34,11 +34,11 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-12" v-if="event.eventPlanningReliability?.length > 0">
+        <div class="col-lg-6 col-12" v-if="event.eventPlanningReliability?.length > 0">
           <h2 class="list-headline">Planungssicherheit</h2>
           <div class="row list">
             <div
-                class="list-item col-6 pb-20"
+                class="list-item col-12 col-md-6 pb-20"
                 v-for="plan in event.eventPlanningReliability"
                 :key="plan.key"
             >
@@ -61,7 +61,7 @@
         </div>
 
         <div class="col-12" v-for="(date, n) in event.dates" :key="n">
-          <evaty-card>
+          <evaty-card class="evaty-event-date-card date-card">
             <div class="d-flex justify-content-between align-items-center flex-md-row flex-column">
               <div class="left d-flex gap-5 align-items-center flex-md-row flex-column">
                 <div class="date-container text-center">
@@ -76,7 +76,7 @@
                     </template>
                   </div>
                   <div class="down month">
-                    {{ dayjs(date.startTime).format('MMMM YYYY') }}
+                    {{ dayjs(date.startTime).format('MMM YYYY') }}
                   </div>
                 </div>
                 <div class="info-container">
@@ -110,7 +110,7 @@
                   </div>
                   <div class="down">
                     <nuxt-link :to="date.ticketLink" target="_blank">
-                      <evaty-button>Tickets</evaty-button>
+                      <evaty-button class="buy-tickets-btn justify-content-center">Tickets</evaty-button>
                     </nuxt-link>
                   </div>
                 </div>

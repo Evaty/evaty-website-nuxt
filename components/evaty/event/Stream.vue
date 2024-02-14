@@ -7,7 +7,7 @@
         :space-between="24"
         :slides-per-view="1"
         :lazy-preload-prev-next="1"
-        :breakpoints="{ 640: { slidesPerView: 3, spaceBetween: 24 } }"
+        :breakpoints="{ 576: {slidesPerView: 2, spaceBetween: 24}, 992: { slidesPerView: 3, spaceBetween: 24 } }"
         class="swiper-overflow">
 
       <template v-if="pending">

@@ -1,7 +1,7 @@
 <template>
     <section id="teaser-download" class="mb-150">
         <div class="container">
-            <div class="row pt-60 pb-60">
+            <div class="row">
                 <div class="col-12 offset-md-6 col-md-5 offset-lg-7 col-lg-5 offset-xl-7 col-xl-5">
                     <div class="headline">
                         <h2 v-html="$t('components.download-teaser.text')">
@@ -14,9 +14,12 @@
                     </div>
                 </div>
             </div>
-            <img srcset="../assets/images/pages/about/about-banner-background@2x.png 2x"
+            <img class="d-none d-md-block" srcset="../assets/images/pages/about/about-banner-background@2x.png 2x"
                  src="../assets/images/pages/about/about-banner-background.png"
                  alt="Iphone present Evaty-App">
+          <img class="d-md-none" srcset="../assets/images/component/download-cta/download-cta-mobile@2x.png 2x"
+               src="../assets/images/component/download-cta/download-cta-mobile.png"
+               alt="Iphone present Evaty-App">
         </div>
     </section>
 </template>

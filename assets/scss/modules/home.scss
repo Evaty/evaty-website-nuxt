@@ -1,14 +1,28 @@
 #hero-search {
     height: calc(100vh - 77.5px);
-    background-size: cover;
+    background-size: 200vw;
+    background-repeat: no-repeat;
+    background-position: top;
+    @include media-breakpoint-up(md) {
+        background-size: cover!important;
+    }
 
     .hero-inner {
         height: 100%;
         width: 100%;
 
+        display: flex;
+        align-items: flex-end;
+        @include media-breakpoint-up(md) {
+            align-items: center;
+        }
+
         .hero-search-container {
             background-color: var(--evaty-color-background);
-            border-radius: 15px;
+            border-radius: 7px 7px 0px 0px;
+            @include media-breakpoint-up(md) {
+                border-radius: 7px;
+            }
             padding: 20px;
             z-index: 1;
 

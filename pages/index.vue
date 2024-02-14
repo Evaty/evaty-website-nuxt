@@ -4,7 +4,7 @@
       class="position-relative mb-150"
       :style="`background: url(${headerImage}) fixed left;`"
   >
-    <div class="hero-inner d-flex align-items-center">
+    <div class="hero-inner">
       <div class="container">
         <div class="row">
           <div class="hero-search-container col-12 offset-lg-1 col-lg-10 offset-xl-6 col-xl-6">
@@ -65,9 +65,9 @@
             navigation
             grab-cursor
             :space-between="24"
-            :slides-per-view="2"
+            :slides-per-view="1"
             :lazy-preload-prev-next="1"
-            :breakpoints="{ 640: { slidesPerView: 4, spaceBetween: 24 } }"
+            :breakpoints="{ 576: {slidesPerView: 2, spaceBetween: 24}, 992: { slidesPerView: 4, spaceBetween: 24 } }"
             class="swiper-overflow"
         >
           <swiper-slide v-for="city in citys" :key="city.city">
