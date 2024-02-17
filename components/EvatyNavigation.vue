@@ -41,8 +41,8 @@ export default defineComponent({
                 </nuxt-link>
               </div>
             </div>
-            <nuxt-link to="/about" :class="{ 'menu-link': true }">{{ $t("layout.navigation.about") }}</nuxt-link>
             <nuxt-link to="/map" :class="{ 'menu-link': true }">{{ $t("layout.navigation.map") }}</nuxt-link>
+            <nuxt-link to="/about" :class="{ 'menu-link': true }">{{ $t("layout.navigation.about") }}</nuxt-link>
           </nav>
         </div>
       </div>
