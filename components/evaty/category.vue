@@ -2,11 +2,11 @@
 import {EvatyEventCard, EvatyEventCardSkeleton, EvatyEventCardAuthor} from "evaty-component-lib";
 
 const { t } = useI18n()
-const {data: category, pending} = await useFetch('https://api.evaty.net/api/v1/event/category/FITNESS/?page=0')
+const {data: category, pending} = await useFetch('https://api.evaty.net/api/v1/event/category/ADVENTURE/?page=0')
 const dayjs = useDayjs();
 
 useHead({
-  title: t("categorys.fitness.label"),
+  title: t("categorys.adventure.label"),
   bodyAttrs: {
     class: "act-category"
   }
@@ -17,18 +17,18 @@ useHead({
 
   <section class="container category-header d-flex justify-content-center flex-column mb-100">
     <div class="category-header-headline pb-10">
-      <h1 class="mb-0">{{ t("categorys.fitness.label") }}</h1>
+      <h1 class="mb-0">{{ t("categorys.adventure.label") }}</h1>
     </div>
     <div class="category-header-description pb-20">
-      {{t("categorys.fitness.description")}}
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
     </div>
     <div class="category-header-count d-flex align-items-center gap-2" v-if="!pending">
-      <i class="fa-regular fa-party-horn"></i>
+      <i class="fa-regular fa-calendar"></i>
       <div class="category-header-count-inner">
         {{ t("general.events", category.totalElements)}}
       </div>
     </div>
-    <img src="@/assets/images/categorys/header-images/fitness-header.png" alt=""/>
+    <img src="@/assets/images/categorys/header-images/adventure-header.png" alt=""/>
   </section>
 
   <section class="container pb-150" v-if="!pending">

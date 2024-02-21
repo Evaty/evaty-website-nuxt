@@ -1,4 +1,50 @@
 .act-category {
+
+  .category-header {
+    //position: relative;
+    min-height: 300px;
+    div {
+      z-index: 1;
+      text-shadow: rgba(var(--evaty-color-black-rgb), 1) 0 0px 5px;
+
+      &.category-header-headline {
+        text-transform: uppercase;
+      }
+      &.category-header-description {
+        font-size: 16px;
+        font-weight: 500;
+        max-width: 500px;
+      }
+      &.category-header-count {
+        gap: 10px;
+        i {
+          font-size: 20px;
+          text-shadow: inherit;
+        }
+        .category-header-count-inner {
+          text-shadow: inherit;
+          display: inline-flex;
+          gap: 5px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+
+
+    img {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+      border: none;
+    }
+  }
+
   .header-image {
     h1 {
       text-shadow: rgba(var(--evaty-color-black-rgb), .5) 0 3px 6px

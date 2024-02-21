@@ -11,13 +11,23 @@
             <!--            <form action="/listing/search" method="get">-->
             <h1>
               <span
-                  class="primary text-gradient">{{ $t('page.home.header.title.primary') }}</span>{{ $t('page.home.header.title.secondary') }}
+                  class="primary text-gradient">
+                {{ $t('page.home.header.title.primary') }}
+              </span>{{ $t('page.home.header.title.secondary') }}
             </h1>
             <evaty-form-group name="Suche" class="pt-30 pb-20">
               <template #label>{{ $t('general.search') }}</template>
-              <input type="text" name="search" id="search-field" placeholder="Hurricane fest..." required/>
+              <input
+                  type="text"
+                  name="search"
+                  id="search-field"
+                  placeholder="Hurricane fest..."
+                  required
+                  v-model="searchValue"
+                  @submit="handleSearch"
+              />
             </evaty-form-group>
-            <evaty-button type="primary" block>{{ $t('general.search') }}</evaty-button>
+            <evaty-button type="primary" block @click="handleSearch">{{ $t('general.search') }}</evaty-button>
             <!-- TODO enable when location serach is enabled-->
             <div class="d-flex justify-content-center pt-10" v-if="false">
               <router-link to="/location" class="text-center"
@@ -237,5 +247,10 @@ const citys = [
     coords: 'lng=9.1322008&lat=48.7745134'
   }
 ]
+let searchValue = ref();
+function handleSearch() {
+  if(searchValue.value.isEmpty) return;
+  useRouter().push({path: '/search', query: {search: searchValue.value}})
+}
 
 </script>

@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import {EvatyEventCard, EvatyEventCardAuthor} from "evaty-component-lib";
+import {EvatyEventCard, EvatyEventCardSkeleton, EvatyEventCardAuthor} from "evaty-component-lib";
 
-const {data: category} = await useFetch('https://api.evaty.net/api/v1/event/category/ADVENTURE/?page=0')
+const { t } = useI18n()
+const {data: category, pending} = await useFetch('https://api.evaty.net/api/v1/event/category/ADVENTURE/?page=0')
 const dayjs = useDayjs();
 
 useHead({
-  title: "Abenteuer",
+  title: t("categorys.adventure.label"),
   bodyAttrs: {
     class: "act-category"
   }
@@ -14,29 +15,29 @@ useHead({
 
 <template>
 
-  <section class="container pb-150 header-image pt-100">
-    <div class="row">
-      <div class="col-12 pb-20">
-        <h1>{{ $t("categorys.adventure.label") }}</h1>
+  <section class="container category-header d-flex justify-content-center flex-column mb-100">
+    <div class="category-header-headline pb-10">
+      <h1 class="mb-0">{{ t("categorys.adventure.label") }}</h1>
+    </div>
+    <div class="category-header-description pb-20">
+      {{t("categorys.adventure.description")}}
+    </div>
+    <div class="category-header-count d-flex align-items-center gap-2" v-if="!pending">
+      <i class="fa-regular fa-party-horn"></i>
+      <div class="category-header-count-inner">
+        {{ t("general.events", category.totalElements)}}
       </div>
-<!--      <div class="col-12 header-image-inner-card transparent">-->
-<!--        <div class="row">-->
-<!--          <div class="col-12" style="width: 100%; height: 400px;">-->
-<!--&lt;!&ndash;            <evaty-event-category-map :stream="category?.content"></evaty-event-category-map>&ndash;&gt;-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
     </div>
     <img src="@/assets/images/categorys/header-images/adventure-header.png" alt=""/>
   </section>
 
-  <section class="container pb-150">
+  <section class="container pb-150" v-if="!pending">
     <div class="row">
       <div class="col-12 justify-content-center" v-if="category.content.length <= 0">
         <h2 class="text-center">Hier gibt's leider noch nichts zu sehen</h2>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mb-4" v-for="event in category.content" :key="event.id">
-        <evaty-event-card :src="event.media[0]?.url" :href="`/event/${event.id}`" :id="event.id">
+        <evaty-event-card :src="event.media[0]?.url" :href="`/event/${event.id}`">
           <template #category>{{ $t(event.category.label) }}</template>
           <template #title>{{ event.name }}</template>
           <template #description>{{ event.smallDescription }}</template>
@@ -49,6 +50,13 @@ useHead({
             </evaty-event-card-author>
           </template>
         </evaty-event-card>
+      </div>
+    </div>
+  </section>
+  <section class="container" v-else>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-4" v-for="n in 9" :key="'skeleton'-n">
+        <EvatyEventCardSkeleton></EvatyEventCardSkeleton>
       </div>
     </div>
   </section>

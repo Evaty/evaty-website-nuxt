@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import {EvatyEventCard, EvatyEventCardAuthor} from "evaty-component-lib";
+import {EvatyEventCard, EvatyEventCardSkeleton, EvatyEventCardAuthor} from "evaty-component-lib";
 
-const {data: category} = await useFetch('https://api.evaty.net/api/v1/event/category/MARKET/FLEAMARKET/?page=0')
+const { t } = useI18n()
+const {data: category, pending} = await useFetch('https://api.evaty.net/api/v1/event/category/MARKET/FLEAMARKET/?page=0')
 const dayjs = useDayjs();
 
 useHead({
-  title: "Flohmärkte",
+  title: t("categorys.market.fleamarket"),
   bodyAttrs: {
     class: "act-category"
   }
@@ -14,31 +15,26 @@ useHead({
 
 <template>
 
-  <section class="container pb-150 header-image pt-100">
-    <div class="row">
-      <div class="col-12 pb-20">
-        <h1>{{ $t("categorys.market.fleamarket") }}</h1>
-      </div>
-      <div class="col-12 header-image-inner-card transparent">
-        <div class="row">
-          <div class="col-12" style="width: 100%; height: 400px;">
-            <mapbox-map map-id="fleamarket-map"
-                        style="width: 100%; height: 400px; border-radius: var(--evaty-border-radius, 7px)"
-                        :options="{
-                          style: 'mapbox://styles/mapbox/streets-v12'
-                        }"
-            ></mapbox-map>
-          </div>
-        </div>
+  <section class="container category-header d-flex justify-content-center flex-column mb-100">
+    <div class="category-header-headline pb-10">
+      <h1 class="mb-0">{{ t("categorys.market.fleamarket") }}</h1>
+    </div>
+    <div class="category-header-description pb-20">
+      {{ t("categorys.market.descriptions.fleamarket") }}
+    </div>
+    <div class="category-header-count d-flex align-items-center gap-2" v-if="!pending">
+      <i class="fa-regular fa-party-horn"></i>
+      <div class="category-header-count-inner">
+        {{ t("general.events", category.totalElements)}}
       </div>
     </div>
     <img src="@/assets/images/categorys/header-images/fleamarket-header.png" alt=""/>
   </section>
 
-  <section class="container pb-150">
+  <section class="container pb-150" v-if="!pending">
     <div class="row">
       <div class="col-12 justify-content-center" v-if="category.content.length <= 0">
-        <h2 class="text-center">Hier gibt's leider noch nichts zu sehen.</h2>
+        <h2 class="text-center">Hier gibt's leider noch nichts zu sehen</h2>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mb-4" v-for="event in category.content" :key="event.id">
         <evaty-event-card :src="event.media[0]?.url" :href="`/event/${event.id}`">
@@ -54,6 +50,13 @@ useHead({
             </evaty-event-card-author>
           </template>
         </evaty-event-card>
+      </div>
+    </div>
+  </section>
+  <section class="container" v-else>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-4" v-for="n in 9" :key="'skeleton'-n">
+        <EvatyEventCardSkeleton></EvatyEventCardSkeleton>
       </div>
     </div>
   </section>

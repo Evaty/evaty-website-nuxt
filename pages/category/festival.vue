@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import {EvatyEventCard, EvatyEventCardAuthor} from "evaty-component-lib";
+import {EvatyEventCard, EvatyEventCardSkeleton, EvatyEventCardAuthor} from "evaty-component-lib";
 
-const {data: category} = await useFetch('https://api.evaty.net/api/v1/event/category/FESTIVAL/?page=0')
+const { t } = useI18n()
+const {data: category, pending} = await useFetch('https://api.evaty.net/api/v1/event/category/FESTIVAL/?page=0')
 const dayjs = useDayjs();
 
 useHead({
-  title: "Festivals",
+  title: t("categorys.festival.label"),
   bodyAttrs: {
     class: "act-category"
   }
@@ -14,17 +15,23 @@ useHead({
 
 <template>
 
-  <section class="container header-image pt-100">
-
-    <div class="row">
-      <div class="col-12 pb-20">
-        <h1>{{ $t("categorys.festival.label") }}</h1>
+  <section class="container category-header d-flex justify-content-center flex-column mb-100">
+    <div class="category-header-headline pb-10">
+      <h1 class="mb-0">{{ $t("categorys.festival.label") }}</h1>
+    </div>
+    <div class="category-header-description pb-20">
+      {{t("categorys.festival.description")}}
+    </div>
+    <div class="category-header-count d-flex align-items-center gap-2" v-if="!pending">
+      <i class="fa-regular fa-party-horn"></i>
+      <div class="category-header-count-inner">
+        {{$t("general.events", category.totalElements, {n: category.totalElements})}}
       </div>
     </div>
     <img src="@/assets/images/categorys/header-images/festival-header.png" alt=""/>
   </section>
 
-  <section class="container pb-150">
+  <section class="container pb-150" v-if="!pending">
     <div class="row">
       <div class="col-12 justify-content-center" v-if="category.content.length <= 0">
         <h2 class="text-center">Hier gibt's leider noch nichts zu sehen</h2>
@@ -43,6 +50,13 @@ useHead({
             </evaty-event-card-author>
           </template>
         </evaty-event-card>
+      </div>
+    </div>
+  </section>
+  <section class="container" v-else>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-4" v-for="n in 9" :key="'skeleton'-n">
+        <EvatyEventCardSkeleton></EvatyEventCardSkeleton>
       </div>
     </div>
   </section>

@@ -2,16 +2,19 @@
   "categorys": {
     "adventure": {
       "course": "Courses",
+      "description": "Experiences offer unforgettable activities and adventures that engage the senses and create memories.",
       "fun": "Fun Experiences",
       "label": "Experiences",
       "tour": "Tours",
       "workshops": "Workshops"
     },
     "club": {
+      "description": "Experience the thrilling atmosphere of intimate events featuring live music, DJs, and performances in various clubs and venues.",
       "label": "Club Shows"
     },
     "concert": {
       "concerts": "Latest",
+      "description": "Concerts offer live performances by musicians and bands of various genres in front of an audience, who enjoy the atmosphere and energy of the music. ",
       "edm": "EDM concerts",
       "indie": "Indie concerts",
       "label": "Concerts",
@@ -20,6 +23,7 @@
       "rock": "Rock concerts"
     },
     "festival": {
+      "description": "Festivals are diverse cultural events that bring people from different backgrounds together to celebrate music, art, food, and community.",
       "label": "Festivals",
       "music-edm": "Electro Festivals",
       "music-festival": "Music Festivals",
@@ -29,10 +33,14 @@
     },
     "filter": "Filter",
     "fitness": {
+      "description": "Exercise your body and improve your health with a variety of activities ranging from cardio and strength training to yoga and Pilates.",
       "label": "Fitness"
     },
     "market": {
-      "fleamarket": "Fleamarkets",
+      "descriptions": {
+        "fleamarket": "At flea markets, you'll find a diverse range of used and vintage items, from furniture to clothing, books, and jewelry."
+      },
+      "fleamarket": "Fleamarket",
       "name": "Market"
     }
   },
@@ -59,7 +67,7 @@
       "unexpected-error": "An error has occurred, please check your input.",
       "wrong-login": "Incorrect password or username."
     },
-    "events": "Events",
+    "events": "no events | {n} event | {n} events",
     "follow": "Follow",
     "geo": {
       "citys": {
@@ -90,7 +98,7 @@
     "no": "No",
     "save": "Save",
     "search": "Search",
-    "searching": "Search",
+    "searching": "Searching",
     "select-language": "Choose language",
     "share": "Share",
     "tbd": "To be defined",
@@ -180,7 +188,7 @@
       },
       "help": {
         "support": {
-          "button": "Sende uns eine Email",
+          "button": "Send us an email",
           "text": "Wir helfen dir gerne bei jedem Schritt den du mit uns machst. Egal ob du Hilfe beim\n              erstellen deiner Veranstaltung brauchst, ob du Feedback an uns hast oder einfach\n              deiner Veranstaltung noch ein bisschen mehr Reichtweite geben möchtest. <br/><br/>\n              Melde dich einfach per Email an uns: hosts{'@'}evaty.net",
           "title": "Support"
         },
@@ -209,6 +217,11 @@
         },
         "title": "Preisübersicht"
       }
+    },
+    "search": {
+      "back": "Back to Homepage",
+      "empty": "There are no results for your search",
+      "for": "Search after:"
     }
   },
   "settings": {

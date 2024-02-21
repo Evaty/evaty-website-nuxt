@@ -2,16 +2,19 @@
   "categorys": {
     "adventure": {
       "course": "Kurse",
+      "description": " Erlebnisse bieten unvergessliche Aktivitäten und Abenteuer, die die Sinne ansprechen und Erinnerungen schaffen.",
       "fun": "Spaßige Erlebnisse",
       "label": "Erlebnisse",
       "tour": "Touren",
       "workshops": "Workshops"
     },
     "club": {
+      "description": "Erlebe hautnah die aufregende Atmosphäre intimer Veranstaltungen mit Live-Musik, DJs und Performances in verschiedenen Clubs und Locations.",
       "label": "Club Shows"
     },
     "concert": {
       "concerts": "Neuste",
+      "description": " Konzerte bieten Live-Aufführungen von Musikern und Bands verschiedener Genres vor einem Publikum, das die Atmosphäre und die Energie der Musik genießt.",
       "edm": "EDM Konzerte",
       "indie": "Indie Konzerte",
       "label": "Konzerte",
@@ -20,6 +23,7 @@
       "rock": "Rock Konzerte"
     },
     "festival": {
+      "description": " Festivals sind vielfältige kulturelle Veranstaltungen, die Menschen aus verschiedenen Hintergründen zusammenbringen, um Musik, Kunst, Essen und Gemeinschaft zu feiern.",
       "label": "Festivals",
       "music-edm": "Elektro Festivals",
       "music-festival": "Musik Festivals",
@@ -29,10 +33,14 @@
     },
     "filter": "Filter",
     "fitness": {
+      "description": "Trainiere deinen Körper und verbessere deine Gesundheit mit einer Vielzahl von Aktivitäten, die von Cardio- und Krafttraining bis hin zu Yoga und Pilates reichen.",
       "label": "Fitness"
     },
     "market": {
-      "fleamarket": "Flohmarkt",
+      "descriptions": {
+        "fleamarket": " Auf Flohmärkten finden Sie eine vielfältige Auswahl an gebrauchten und Vintage-Artikeln, von Möbeln über Kleidung bis hin zu Büchern und Schmuck."
+      },
+      "fleamarket": "Flohmärkte",
       "name": "Märkte"
     }
   },
@@ -59,7 +67,7 @@
       "unexpected-error": "Es ist ein Fehler aufgetreten, bitte überprüfe deine Eingaben.",
       "wrong-login": "Falsches Passwort oder Nutzername."
     },
-    "events": "Event",
+    "events": "Keine Events | {n} Event | {n} Events",
     "follow": "Folgen",
     "geo": {
       "citys": {
@@ -209,6 +217,11 @@
         },
         "title": "Preisübersicht"
       }
+    },
+    "search": {
+      "back": "Zurück zur Startseite",
+      "empty": "Keine Suchergebnisse gefunden",
+      "for": "Suche nach:"
     }
   },
   "settings": {
