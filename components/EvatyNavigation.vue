@@ -2,6 +2,9 @@
 
 import {defineComponent} from "vue";
 let mobileNavOpen = ref(false);
+onBeforeRouteLeave((route) => {
+  if(mobileNavOpen.value) mobileNavOpen.value=false
+})
 
 </script>
 
