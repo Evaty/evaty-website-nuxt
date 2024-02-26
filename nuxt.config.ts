@@ -126,6 +126,6 @@ export default defineNuxtConfig({
         '/host-yourself': {prerender: true},
         '/category': {swr: true},
         '/event/**': {swr: 3600},
-        '/map': {ssr: false}
+        '/map': {ssr: false},
     }
 })
