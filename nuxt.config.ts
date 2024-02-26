@@ -90,7 +90,7 @@ export default defineNuxtConfig({
                 domain: 'en.evaty.net'
             }
         ],
-        differentDomains: (process.env.NODE_ENV === 'production')
+        differentDomains: (process.env.EVATY_ENV === 'production')
     },
     cookieControl:
         {

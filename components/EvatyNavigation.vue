@@ -1,10 +1,11 @@
 <script setup lang="ts">
 
+const maintenance = process.env.EVATY_MAINTENANCE;
 let mobileNavOpen = ref(false);
-onBeforeRouteUpdate((to, from, next) => {
-  console.log(from)
-  if(mobileNavOpen.value) mobileNavOpen.value=false
-})
+// onBeforeRouteUpdate((to, from, next) => {
+//   console.log(from)
+//   if(mobileNavOpen.value) mobileNavOpen.value=false
+// })
 
 </script>
 
@@ -16,7 +17,7 @@ onBeforeRouteUpdate((to, from, next) => {
           <nuxt-link to="/"><img src="@/assets/images/logo/evaty-logo-minimal-color.svg" alt=""></nuxt-link>
         </div>
 
-        <div class="menu-container">
+        <div class="menu-container" v-if="!maintenance">
           <nav>
             <nuxt-link to="/" :class="{ 'menu-link': true }">{{ $t("layout.navigation.home") }}</nuxt-link>
             <div class="dropdown">
