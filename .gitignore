@@ -5,6 +5,7 @@
 .nitro
 .cache
 dist
+!dist/_redirects
 
 # Node dependencies
 node_modules
