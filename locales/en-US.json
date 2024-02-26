@@ -116,6 +116,11 @@
   },
   "moment-locale": "en",
   "page": {
+    "error": {
+      "back": "Back to homepage",
+      "description": "Don't worry, we'll put you back on the right track and show you what's waiting for you.",
+      "headline": "Did you get lost?"
+    },
     "event-detail": {
       "description": "Description",
       "entry": "Register for event",

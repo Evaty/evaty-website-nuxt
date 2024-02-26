@@ -116,6 +116,11 @@
   },
   "moment-locale": "de",
   "page": {
+    "error": {
+      "back": "Zurück zur Startseite",
+      "description": "Keine sorge wir bringen dich zurück auf den richtigen Weg und zeigen dir was alles auf dich wartet.",
+      "headline": "Hast du dich verlaufen?"
+    },
     "event-detail": {
       "description": "Beschreibung",
       "entry": "Anmelden",
