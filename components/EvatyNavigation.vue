@@ -1,21 +1,19 @@
-<script lang="ts">
+<script setup lang="ts">
 
 import {defineComponent} from "vue";
+let mobileNavOpen = ref(false);
 
-export default defineComponent({
-  name: 'evaty-navigation',
-})
 </script>
 
 <template>
-  <div class="navigation-wrapper">
+  <div :class="{'navigation-wrapper': true, 'open': mobileNavOpen}">
     <div class="navigation-container container">
       <div class="container-left">
         <div class="logo-container">
           <nuxt-link to="/"><img src="@/assets/images/logo/evaty-logo-minimal-color.svg" alt=""></nuxt-link>
         </div>
 
-        <div class="menu-container d-none d-md-block">
+        <div class="menu-container">
           <nav>
             <nuxt-link to="/" :class="{ 'menu-link': true }">{{ $t("layout.navigation.home") }}</nuxt-link>
             <div class="dropdown">
@@ -58,12 +56,9 @@ export default defineComponent({
 
         <!--            Hamburger Mobile Navigation-->
         <a href="/" class="btn btn-light back-to-page d-none">Zurück zur Seite</a>
-        <div class="burger-menu d-block d-md-none">
-          <button class="hamburger hamburger--collapse" type="button">
-                  <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                  </span>
-          </button>
+        <div class="burger-menu d-block d-md-none" @click="mobileNavOpen=!mobileNavOpen">
+          <i class="fa-regular fa-xmark" v-if="mobileNavOpen"></i>
+          <i class="fa-regular fa-bars" v-else></i>
         </div>
       </div>
     </div>
