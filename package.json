@@ -16,6 +16,7 @@
     "dayjs-nuxt": "^2.1.9",
     "mapbox-gl": "^3.1.2",
     "nuxt": "^3.10.1",
+    "nuxt-jsonld": "^2.0.8",
     "nuxt-mapbox": "^1.5.7",
     "sass": "^1.70.0",
     "vue": "^3.4.14",

@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout>
     <NuxtPage/>
-    <CookieControl :locale="$t('moment-locale')" />
+    <CookieControl :locale="$t('moment-locale')"/>
   </NuxtLayout>
 </template>
 <script setup lang="ts">
@@ -17,5 +17,18 @@ useHead({
       content: `app-id=1562916647`
     }
   ]
+});
+useJsonld({
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  url: 'https://evaty.net',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://evaty.net/search?search={search_term_string}'
+    },
+    'query-input': "required name=search_term_string"
+  }
 });
 </script>

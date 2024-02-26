@@ -1,8 +1,8 @@
 <script setup lang="ts">
 
-import {defineComponent} from "vue";
 let mobileNavOpen = ref(false);
-onBeforeRouteLeave((route) => {
+onBeforeRouteUpdate((to, from, next) => {
+  console.log(from)
   if(mobileNavOpen.value) mobileNavOpen.value=false
 })
 

@@ -49,18 +49,12 @@ export default defineNuxtConfig({
         }
     },
     devtools: {
-        enabled: false,
+        enabled: true,
         timeline: {
             enabled: false
         }
     },
-    modules: [
-        '@nuxtjs/i18n',
-        'nuxt-swiper',
-        'nuxt-mapbox',
-        'dayjs-nuxt',
-        '@dargmuesli/nuxt-cookie-control'
-    ],
+    modules: ['@nuxtjs/i18n', 'nuxt-swiper', 'nuxt-mapbox', 'dayjs-nuxt', '@dargmuesli/nuxt-cookie-control', 'nuxt-jsonld'],
     css: [
         'evaty-component-lib/dist/style.css',
         '@/assets/scss/app.scss',
