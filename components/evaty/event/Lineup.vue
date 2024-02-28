@@ -10,7 +10,7 @@
             <h3>{{key}}</h3>
           </div>
           <div class="col-6 col-md-4 col-lg-2 pb-20" v-for="slot in date">
-            <evaty-image-card :src="slot.artist.profileImage?.url" :href="`/user/${slot.artist.id}`">
+            <evaty-image-card :src="slot.artist.profileImage?.url">
               {{slot.artist.username}}
             </evaty-image-card>
           </div>
