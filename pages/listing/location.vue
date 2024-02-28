@@ -1,6 +1,6 @@
 <script setup>
 navigateTo({
   path: `/map`,
-  params: useRoute().params
+  query: useRoute().query
 }, {redirectCode: 301})
 </script>
