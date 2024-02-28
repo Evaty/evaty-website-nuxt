@@ -1,4 +1,4 @@
-<script>
+<script setup>
 navigateTo({
   path: `/map`,
   params: useRoute().params

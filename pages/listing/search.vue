@@ -1,4 +1,4 @@
-<script>
+<script setup>
 navigateTo({
   path: `/search`,
   params: useRoute().params
