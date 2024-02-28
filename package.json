@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@turf/distance": "^6.5.0",
-    "evaty-component-lib": "^0.3.3",
+    "evaty-component-lib": "^0.3.7",
     "nuxt-swiper": "^1.2.2"
   }
 }
