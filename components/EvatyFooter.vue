@@ -6,6 +6,7 @@ let showModal = ref(false);
 
 function changeLanguage(lang: string) {
   setLocale(lang)
+  showModal.value=false;
 }
 </script>
 <template>
@@ -62,7 +63,7 @@ function changeLanguage(lang: string) {
           </div>
           <div class="language" @click="showModal=true">{{ $t("settings.account.language") }}: {{ $t("currentLang") }}</div>
           <teleport to="body">
-            <evaty-modal :show="showModal">
+            <evaty-modal :show="showModal" @close="showModal=false">
               <template #header>{{ $t('settings.account.language-title') }}</template>
               <template #footer><br></template>
               <template #body>
