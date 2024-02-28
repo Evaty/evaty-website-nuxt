@@ -60,8 +60,8 @@
           <h2>Wann findet es statt?</h2>
         </div>
 
-        <div class="col-12" v-for="(date, n) in event.dates" :key="n">
-          <evaty-card class="evaty-event-date-card date-card">
+        <div class="col-12 evaty-event-date-card" v-for="(date, n) in event.dates" :key="n">
+          <evaty-card>
             <div class="d-flex justify-content-between align-items-center flex-md-row flex-column">
               <div class="left d-flex gap-5 align-items-center flex-md-row flex-column">
                 <div class="date-container text-center">
