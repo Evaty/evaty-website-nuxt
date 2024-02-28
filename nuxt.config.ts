@@ -10,6 +10,9 @@ export default defineNuxtConfig({
         fallbackTitle: false,
         redirectToCanonicalSiteUrl: true
     },
+    ogImage: {
+        enabled: false
+    },
     //
     // Basic head configuration like favicon and viewport and such
     //
