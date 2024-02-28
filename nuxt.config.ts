@@ -1,5 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    // SEO Related things
+    site: {
+        url: "https://evaty.net",
+        name: "Evaty",
+        description: "Ein Platz für alles, was du erleben möchtest.",
+    },
+    seo: {
+        fallbackTitle: false,
+        redirectToCanonicalSiteUrl: true
+    },
+    //
+    // Basic head configuration like favicon and viewport and such
+    //
     app: {
         head: {
             link: [
@@ -54,7 +67,7 @@ export default defineNuxtConfig({
             enabled: false
         }
     },
-    modules: ['@nuxtjs/i18n', 'nuxt-swiper', 'nuxt-mapbox', 'dayjs-nuxt', '@dargmuesli/nuxt-cookie-control', 'nuxt-jsonld'],
+    modules: ['@nuxtjs/i18n', '@nuxtjs/seo', 'nuxt-swiper', 'nuxt-mapbox', 'dayjs-nuxt', '@dargmuesli/nuxt-cookie-control', 'nuxt-jsonld'],
     css: [
         'evaty-component-lib/dist/style.css',
         '@/assets/scss/app.scss',
@@ -77,16 +90,16 @@ export default defineNuxtConfig({
         },
         lazy: true,
         langDir: './locales',
-        defaultLocale: 'de-DE',
+        defaultLocale: 'de',
         locales: [
             {
-                code: 'de-DE',
-                file: 'de-DE.json',
+                code: 'de',
+                file: 'de.json',
                 domain: 'evaty.net',
             },
             {
-                code: 'en-US',
-                file: 'en-US.json',
+                code: 'en',
+                file: 'en.json',
                 domain: 'en.evaty.net'
             }
         ],

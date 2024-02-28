@@ -159,91 +159,91 @@ const citys = [
   {
     city: 'hamburg',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/hamburg.jpg',
+    img: '/_nuxt/assets/images/home/de/hamburg.jpg',
     coords: 'lng=9.9958856&lat=53.5447807'
   },
   {
     city: 'berlin',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/berlin.jpg',
+    img: '/_nuxt/assets/images/home/de/berlin.jpg',
     coords: 'lng=13.352283&lat=52.5029534'
   },
   {
     city: 'koeln',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/koeln.jpg',
+    img: '/_nuxt/assets/images/home/de/koeln.jpg',
     coords: 'lng=6.9553952&lat=50.9528412'
   },
   {
     city: 'muenchen',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/muenchen.jpg',
+    img: '/_nuxt/assets/images/home/de/muenchen.jpg',
     coords: 'lng=11.4717963&lat=48.155004'
   },
   {
     city: 'bielefeld',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/bielefeld.jpg',
+    img: '/_nuxt/assets/images/home/de/bielefeld.jpg',
     coords: 'lng=8.5101396&lat=52.0124882'
   },
   {
     city: 'dortmund',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/dortmund.jpg',
+    img: '/_nuxt/assets/images/home/de/dortmund.jpg',
     coords: 'lng=7.465263252528956&lat=51.51413405946201'
   },
   {
     city: 'bremen',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/bremen.jpg',
+    img: '/_nuxt/assets/images/home/de/bremen.jpg',
     coords: 'lng=8.80716499999994&lat=53.07581999999999'
   },
   {
     city: 'duesseldorf',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/duesseldorf.jpg',
+    img: '/_nuxt/assets/images/home/de/duesseldorf.jpg',
     coords: 'lng=6.776313999999957&lat=51.225402'
   },
   {
     city: 'frankfurt',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/frankfurt.jpg',
+    img: '/_nuxt/assets/images/home/de/frankfurt.jpg',
     coords: 'lng=8.496482&lat=50.1213479'
   },
   {
     city: 'hannover',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/hannover.jpg',
+    img: '/_nuxt/assets/images/home/de/hannover.jpg',
     coords: 'lng=9.7076941&lat=52.3671053'
   },
   {
     city: 'kiel',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/kiel.jpg',
+    img: '/_nuxt/assets/images/home/de/kiel.jpg',
     coords: 'lng=10.0556377&lat=54.3418926'
   },
   {
     city: 'leipzig',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/leipzig.jpg',
+    img: '/_nuxt/assets/images/home/de/leipzig.jpg',
     coords: 'lng=12.212028&lat=51.3421989'
   },
   {
     city: 'muenster',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/muenster.jpg',
+    img: '/_nuxt/assets/images/home/de/muenster.jpg',
     coords: 'lng=7.5606097&lat=51.9457937'
   },
   {
     city: 'nuernberg',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/nuernberg.jpg',
+    img: '/_nuxt/assets/images/home/de/nuernberg.jpg',
     coords: 'lng=10.9333827&lat=49.3825054'
   },
   {
     city: 'stuttgart',
     country: 'germany',
-    img: 'https://evaty.net/assets/images/home/de/stuttgart.jpg',
+    img: '/_nuxt/assets/images/home/de/stuttgart.jpg',
     coords: 'lng=9.1322008&lat=48.7745134'
   }
 ]

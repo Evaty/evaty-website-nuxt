@@ -68,13 +68,13 @@ function changeLanguage(lang: string) {
               <template #body>
                 <div class="row">
                   <div class="col-6">
-                    <evaty-button @click="changeLanguage('de-DE')">
-                      Deutsch (DE)
+                    <evaty-button @click="changeLanguage('de')">
+                      Deutsch
                     </evaty-button>
                   </div>
                   <div class="col-6">
-                    <evaty-button @click="changeLanguage('en-US')">
-                      English (US)
+                    <evaty-button @click="changeLanguage('en')">
+                      English
                     </evaty-button>
                   </div>
                 </div>
