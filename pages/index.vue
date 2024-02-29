@@ -144,13 +144,28 @@ import {EvatyButton, EvatyFormGroup, EvatyImageCard, EvatyTownCard} from 'evaty-
 // import 'swiper/css/navigation'
 
 import headerImage from '@/assets/images/home/header/festival-24-season.jpg'
-import arrowDown from '@/assets/images/home/arrow-down.svg'
 import catConcert from '@/assets/images/categorys/concert.png'
 import catFestival from '@/assets/images/categorys/festival.png'
 import catAdventure from '@/assets/images/categorys/experiences.png'
 import catFitness from '@/assets/images/categorys/fitness.png'
 import catClub from '@/assets/images/categorys/club.png'
 import catFleamarket from '@/assets/images/categorys/fleamarket.png'
+
+import hamburg from '@/assets/images/home/de/hamburg.jpg';
+import berlin from '@/assets/images/home/de/berlin.jpg'
+import koeln from '@/assets/images/home/de/koeln.jpg'
+import muenchen from '@/assets/images/home/de/muenchen.jpg'
+import bielefeld from '@/assets/images/home/de/bielefeld.jpg'
+import bremen from '@/assets/images/home/de/bremen.jpg'
+import dortmund from '@/assets/images/home/de/dortmund.jpg'
+import duesseldorf from '@/assets/images/home/de/duesseldorf.jpg'
+import frankfurt from '@/assets/images/home/de/frankfurt.jpg'
+import hannover from '@/assets/images/home/de/hannover.jpg'
+import kiel from '@/assets/images/home/de/kiel.jpg'
+import leipzig from '@/assets/images/home/de/leipzig.jpg'
+import muenster from '@/assets/images/home/de/muenster.jpg'
+import nuernberg from '@/assets/images/home/de/nuernberg.jpg'
+import stuttgart from '@/assets/images/home/de/stuttgart.jpg'
 
 import {Navigation} from 'swiper/modules'
 
@@ -159,95 +174,120 @@ const citys = [
   {
     city: 'hamburg',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/hamburg.jpg',
+    img: hamburg,
     coords: 'lng=9.9958856&lat=53.5447807'
   },
   {
     city: 'berlin',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/berlin.jpg',
+    img: berlin,
     coords: 'lng=13.352283&lat=52.5029534'
   },
   {
     city: 'koeln',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/koeln.jpg',
+    img: koeln,
     coords: 'lng=6.9553952&lat=50.9528412'
   },
   {
     city: 'muenchen',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/muenchen.jpg',
+    img: muenchen,
     coords: 'lng=11.4717963&lat=48.155004'
   },
   {
     city: 'bielefeld',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/bielefeld.jpg',
+    img: bielefeld,
     coords: 'lng=8.5101396&lat=52.0124882'
   },
   {
     city: 'dortmund',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/dortmund.jpg',
+    img: dortmund,
     coords: 'lng=7.465263252528956&lat=51.51413405946201'
   },
   {
     city: 'bremen',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/bremen.jpg',
+    img: bremen,
     coords: 'lng=8.80716499999994&lat=53.07581999999999'
   },
   {
     city: 'duesseldorf',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/duesseldorf.jpg',
+    img: duesseldorf,
     coords: 'lng=6.776313999999957&lat=51.225402'
   },
   {
     city: 'frankfurt',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/frankfurt.jpg',
+    img: frankfurt,
     coords: 'lng=8.496482&lat=50.1213479'
   },
   {
     city: 'hannover',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/hannover.jpg',
+    img: hannover,
     coords: 'lng=9.7076941&lat=52.3671053'
   },
   {
     city: 'kiel',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/kiel.jpg',
+    img: kiel,
     coords: 'lng=10.0556377&lat=54.3418926'
   },
   {
     city: 'leipzig',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/leipzig.jpg',
+    img: leipzig,
     coords: 'lng=12.212028&lat=51.3421989'
   },
   {
     city: 'muenster',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/muenster.jpg',
+    img: muenster,
     coords: 'lng=7.5606097&lat=51.9457937'
   },
   {
     city: 'nuernberg',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/nuernberg.jpg',
+    img: nuernberg,
     coords: 'lng=10.9333827&lat=49.3825054'
   },
   {
     city: 'stuttgart',
     country: 'germany',
-    img: '/_nuxt/assets/images/home/de/stuttgart.jpg',
+    img: stuttgart,
     coords: 'lng=9.1322008&lat=48.7745134'
   }
 ]
 let searchValue = ref();
+
+useJsonld([{
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  url: 'https://evaty.net',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://evaty.net/search?search={search_term_string}'
+    },
+    'query-input': "required name=search_term_string"
+  }
+},
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    'image': 'https://evaty.net/assets/images/logo/evaty-logo-full-color.svg',
+    url: 'https://evaty.net',
+    sameAs: ['https://www.threads.net/@evaty_app', 'https://www.instagram.com/evaty_app/', 'https://www.tiktok.com/@evatyapp'],
+    logo: 'https://evaty.net/assets/images/logo/evaty-logo-simple.png',
+    name: 'Evaty',
+    description: 'Ein Platz für alles, was du erleben möchtest.',
+    email: 'info@evaty.net'
+  }]);
 function handleSearch() {
   if(searchValue.value.isEmpty) return;
   useRouter().push({path: '/search', query: {search: searchValue.value}})
