@@ -18,28 +18,4 @@ useHead({
     }
   ]
 });
-useJsonld([{
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  url: 'https://evaty.net',
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: {
-      '@type': 'EntryPoint',
-      urlTemplate: 'https://evaty.net/search?search={search_term_string}'
-    },
-    'query-input': "required name=search_term_string"
-  }
-},
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    'image': 'https://evaty.net/assets/images/logo/evaty-logo-full-color.svg',
-    url: 'https://evaty.net',
-    sameAs: ['https://www.threads.net/@evaty_app', 'https://www.instagram.com/evaty_app/', 'https://www.tiktok.com/@evatyapp'],
-    logo: 'https://evaty.net/assets/images/logo/evaty-logo-simple.png',
-    name: 'Evaty',
-    description: 'Ein Platz für alles, was du erleben möchtest.',
-    email: 'info@evaty.net'
-  }]);
 </script>
