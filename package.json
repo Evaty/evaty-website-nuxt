@@ -20,6 +20,7 @@
     "nuxt-jsonld": "^2.0.8",
     "nuxt-mapbox": "^1.5.7",
     "sass": "^1.70.0",
+    "schema-dts": "^1.1.2",
     "vue": "^3.4.14",
     "vue-router": "^4.2.5"
   },

@@ -13,6 +13,16 @@ export default defineNuxtConfig({
     ogImage: {
         enabled: false
     },
+    schemaOrg: {
+        identity: {
+            type: 'Organization',
+            name: 'Evaty',
+            url: 'https://evaty.net',
+            logo: 'https://evaty.net/assets/images/logo/evaty-logo-simple.png',
+            description: 'Ein Platz für alles, was du erleben möchtest.',
+            sameAs: ['https://www.threads.net/@evaty_app', 'https://www.instagram.com/evaty_app/', 'https://www.tiktok.com/@evatyapp'],
+        }
+    },
     //
     // Basic head configuration like favicon and viewport and such
     //

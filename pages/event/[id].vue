@@ -227,21 +227,20 @@
 <script setup>
 import {EvatyGallery, EvatyButton, EvatyCard} from "evaty-component-lib";
 import {useDayjs} from "#dayjs";
-import {useHead} from "@unhead/vue";
 
 const {id} = useRoute().params;
 const dayjs = useDayjs();
 
 const uri = 'https://api.evaty.net/api/v1/event/' + id;
 const {data: event, pending} = await useLazyFetch(uri, {key: id});
-
 watch(pending, () => {
+  useSchemaOrg([...useEventSchema(event.value)]);
   useSeoMeta({
     title: event.value.name,
     description: event.value.smallDescription,
     appleItunesApp: {
       appId: "1562916647",
-      appArgument:"/event/"+event.value.id,
+      appArgument: "/event/" + event.value.id,
     },
     ogType: "website",
     ogTitle: event.value.name,
