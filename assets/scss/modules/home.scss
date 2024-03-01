@@ -2,8 +2,10 @@
     height: calc(100dvh - 77.5px);
     background-size: 200vw;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top left;
+    background-attachment: fixed;
     @include media-breakpoint-up(md) {
+        background-position: left;
         background-size: cover!important;
     }
 

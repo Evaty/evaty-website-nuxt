@@ -2,7 +2,7 @@
   <section
       id="hero-search"
       class="position-relative mb-150"
-      :style="`background: url(${headerImage}) fixed left;`"
+      :style="`background-image: url(${headerImage});`"
   >
     <div class="hero-inner">
       <div class="container">
