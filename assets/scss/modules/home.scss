@@ -2,8 +2,10 @@
     height: calc(100dvh - 77.5px);
     background-size: 200vw;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top left;
+    background-attachment: fixed;
     @include media-breakpoint-up(md) {
+        background-position: left;
         background-size: cover!important;
     }
 
@@ -19,7 +21,7 @@
 
         .hero-search-container {
             background-color: var(--evaty-color-background);
-            border-radius: 7px 7px 0px 0px;
+            border-radius: 7px 7px 0 0;
             @include media-breakpoint-up(md) {
                 border-radius: 7px;
             }

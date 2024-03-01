@@ -2,7 +2,7 @@
   <section
       id="hero-search"
       class="position-relative mb-150"
-      :style="`background: url(${headerImage}) fixed left;`"
+      :style="`background-image: url(${headerImage});`"
   >
     <div class="hero-inner">
       <div class="container">
@@ -28,11 +28,12 @@
               />
             </evaty-form-group>
             <evaty-button type="primary" block @click="handleSearch">{{ $t('general.search') }}</evaty-button>
+
             <!-- TODO enable when location serach is enabled-->
-            <div class="d-flex justify-content-center pt-10" v-if="false">
-              <router-link to="/location" class="text-center"
+            <div class="d-flex justify-content-center pt-10">
+              <router-link to="/map" class="text-center"
               ><span class="evaty-link evaty-color-text-primary-500 text-center"
-              >oder nach Orten suchen</span
+              >oder auf der Karte suchen</span
               >
               </router-link>
             </div>
@@ -103,34 +104,46 @@
       <div class="col-12">
         <div class="row">
           <div class="col-xl-2 col-6 col-md-4">
-            <evaty-image-card :src="catConcert" href="/category/concert">
-              {{ $t('categorys.concert.label') }}
-            </evaty-image-card>
+            <nuxt-link to="/category/concert">
+              <evaty-image-card :src="catConcert">
+                {{ $t('categorys.concert.label') }}
+              </evaty-image-card>
+            </nuxt-link>
           </div>
           <div class="col-xl-2 col-6 col-md-4">
-            <evaty-image-card :src="catFestival" href="/category/festival">
-              {{ $t('categorys.festival.label') }}
-            </evaty-image-card>
+            <nuxt-link to="/category/festival">
+              <evaty-image-card :src="catFestival">
+                {{ $t('categorys.festival.label') }}
+              </evaty-image-card>
+            </nuxt-link>
           </div>
           <div class="col-xl-2 col-6 col-md-4">
-            <evaty-image-card :src="catAdventure" href="/category/adventure">
-              {{ $t('categorys.adventure.label') }}
-            </evaty-image-card>
+            <nuxt-link to="/category/adventure">
+              <evaty-image-card :src="catAdventure">
+                {{ $t('categorys.adventure.label') }}
+              </evaty-image-card>
+            </nuxt-link>
           </div>
           <div class="col-xl-2 col-6 col-md-4">
-            <evaty-image-card :src="catFitness" href="/category/fitness">
-              {{ $t('categorys.fitness.label') }}
-            </evaty-image-card>
+            <nuxt-link to="/category/fitness">
+              <evaty-image-card :src="catFitness">
+                {{ $t('categorys.fitness.label') }}
+              </evaty-image-card>
+            </nuxt-link>
           </div>
           <div class="col-xl-2 col-6 col-md-4">
-            <evaty-image-card :src="catClub" href="/category/club">
-              {{ $t('categorys.club.label') }}
-            </evaty-image-card>
+            <nuxt-link to="/category/club">
+              <evaty-image-card :src="catClub">
+                {{ $t('categorys.club.label') }}
+              </evaty-image-card>
+            </nuxt-link>
           </div>
           <div class="col-xl-2 col-6 col-md-4">
-            <evaty-image-card :src="catFleamarket" href="/category/fleamarket">
-              {{ $t('categorys.market.fleamarket') }}
-            </evaty-image-card>
+            <nuxt-link to="/category/fleamarket">
+              <evaty-image-card :src="catFleamarket" >
+                {{ $t('categorys.market.fleamarket') }}
+              </evaty-image-card>
+            </nuxt-link>
           </div>
         </div>
       </div>
