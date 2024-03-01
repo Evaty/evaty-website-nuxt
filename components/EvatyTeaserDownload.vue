@@ -9,17 +9,17 @@
                     </div>
                     <div class="action d-flex align-items-center">
                         <div><a href="https://apple.co/3S6cyap" target="_blank"><img
-                            src="../assets/images/badges/apple-appstore-black-badge.svg" alt=""></a></div>
+                            src="../assets/images/badges/apple-appstore-black-badge.svg" alt="Appstore Badge" loading="lazy"></a></div>
 <!--                        <div><img src="/assets/images/badges/google-play-badge.png" alt=""></div>-->
                     </div>
                 </div>
             </div>
             <img class="d-none d-md-block" srcset="../assets/images/pages/about/about-banner-background@2x.png 2x"
                  src="../assets/images/pages/about/about-banner-background.png"
-                 alt="Iphone present Evaty-App">
+                 alt="Iphone present Evaty-App" loading="lazy">
           <img class="d-md-none" srcset="../assets/images/component/download-cta/download-cta-mobile@2x.png 2x"
                src="../assets/images/component/download-cta/download-cta-mobile.png"
-               alt="Iphone present Evaty-App">
+               alt="Iphone present Evaty-App" loading="lazy">
         </div>
     </section>
 </template>
